@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Nosuke.unity
+    guid: a8139d79d74386c44b16c682d25f1421
+  - enabled: 1
+    path: Assets/Scenes/Nosuke2.unity
+    guid: 9543fd8486686454c9f270b46f63ea0f
   m_configObjects: {}

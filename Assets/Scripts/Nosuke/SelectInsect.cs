@@ -1,46 +1,105 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using System.IO;
 
 public class SelectInsect : MonoBehaviour
 {
-    public Transform[] bodyparts;
+    InsectSelectController selectCon;
+
     // それぞれの部位を置く空オブジェクトの場所
-    GameObject[] bodyList;
+    public GameObject[] bodyList;
     // 現在表示されているボディパーツ
 
-    int bodyNumber;
+    public List<Transform> conectPoint;
+
+    int bodyNumber = 1;
     // 現在選択している部位
-    int insectNumber;
+    int insectNumber = 1;
     // 現在選択している虫の種類
 
+    float slotTimer;
+
+    bool ready = false;
+    void Awake()
+    {
+        //input = GetComponent<PlayerInput>();
+        selectCon = GameObject.FindWithTag("GameController").GetComponent<InsectSelectController>();
+    }
+    void Start()
+    {
+        foreach(Transform c in transform) conectPoint.Add(c);
+
+        for (int i = 1; i <= 3; i++)
+        {
+            bodyList[i - 1] = Instantiate((GameObject)Resources.Load("TestPrefab/" + selectCon.insectSelectCSVDatas[insectNumber][i]), conectPoint[i - 1]);
+            //Debug.Log(bodyList[i - 1]);
+        } 
+    }
     void Update()
     {
-        if(Input.GetAxisRaw("Vertical") > 0) ChangeBody(1);
-        else if(Input.GetAxisRaw("Vertical") < 0) ChangeBody(-1);
-        // パーツの種類を変える
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            DebugInsectDecide();
+        }
+        if (ready)
+        {
+            if (InsectSelectController.instance.dic[gameObject.name] == null)
+            {
+                //InsectSelectController.instance.dic[gameObject.name] = gameObject;
+                InsectSelectController.instance.InsectList(gameObject);
+            }
+            else return;
+        }
+        
 
-        if (Input.GetAxisRaw("Horizontal") > 0) bodyNumber++;
-        else if (Input.GetAxisRaw("Horizontal") < 0) bodyNumber--;
-        // 選択している部位を変える
+        slotTimer += Time.deltaTime;
 
-        if(bodyNumber > bodyparts.Length) bodyNumber = 0;
-        else if(bodyNumber < 0) bodyNumber = bodyparts.Length;
-        // パーツが選択できる範囲を超えたら、それぞれ最小値、最大値にする
+        if(slotTimer >=  0.2f)
+        {
+            ChangeBody();
+        }
+
+        if (bodyNumber > 3) ready = true;
     }
 
-    void ChangeBody(int i)
+    void ChangeBody()
     {
-        Destroy(bodyList[bodyNumber]);
+        if (ready) return;
+
+        
+        if (bodyList[bodyNumber - 1] != null) Destroy(bodyList[bodyNumber - 1]);
+
         // 前回選択していたオブジェクトを削除
 
-        insectNumber += i;
+        insectNumber++;
         // 虫の種類を変更
-        if (insectNumber > 9) insectNumber = 1;
-        else if (insectNumber < 0) insectNumber = 9;
+        if (insectNumber > 2) insectNumber = 1;
         // 虫の種類が選択できる範囲を超えたら、それぞれ最小値、最大値にする
-
-        bodyList[bodyNumber] = Instantiate((GameObject)Resources.Load("LoadPrefabs/"), bodyparts[bodyNumber].position, Quaternion.identity, transform);
+        slotTimer = 0;
+        bodyList[bodyNumber - 1] = Instantiate((GameObject)Resources.Load("TestPrefab/" + selectCon.insectSelectCSVDatas[insectNumber][bodyNumber]),
+                                   conectPoint[bodyNumber - 1]);
         // CSVから対応したオブジェクトを生成する
+    }
+    // コントローラー用の関数
+    public void InsectDecide(InputAction.CallbackContext context)
+    {
+        if (ready) return;
+        if (!context.performed) return;
+
+        bodyNumber++;
+        insectNumber = 1;
+        slotTimer = 0;
+    }
+
+    // PCでデバッグ用の関数 あんま使わない方がいいかも
+    void DebugInsectDecide()
+    {
+        if (ready) return;
+
+        bodyNumber++;
+        insectNumber = 1;
+        slotTimer = 0;
     }
 }

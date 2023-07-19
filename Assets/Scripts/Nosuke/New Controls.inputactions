@@ -2,158 +2,61 @@
     "name": "New Controls",
     "maps": [
         {
-            "name": "New action map",
-            "id": "13404729-f82f-470e-8616-4a4c403007f4",
-            "actions": [
-                {
-                    "name": "move1",
-                    "type": "Button",
-                    "id": "c58575ad-479d-4b29-a40b-85a561b197dd",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "Horizontal",
-                    "id": "ad38c3fe-7a4c-4d53-8155-b4871ac9f011",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "move1",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "70de6433-c9e1-4269-aacd-fce497decaad",
-                    "path": "<HID::QIXIONG Wire PS4 Controller>/stick/down",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "move1",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "afee2c28-b7a5-4026-9b75-8920fbebfc0e",
-                    "path": "<HID::QIXIONG Wire PS4 Controller>/stick/up",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "move1",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "Horizontal2",
-                    "id": "dc96ba6e-025a-46e6-8c69-99f73d20728c",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "move1",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "df45da23-0bbb-48ce-aabc-23ce0a8efaa8",
-                    "path": "<DualShockGamepad>/leftStick/down",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "move1",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "64087a4f-9a09-440a-bbc8-4cca63d4b394",
-                    "path": "<DualShockGamepad>/leftStick/up",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "move1",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                }
-            ]
-        },
-        {
-            "name": "New action map1",
-            "id": "ace09508-c6e6-434f-b17c-58ca93c4d337",
-            "actions": [
-                {
-                    "name": "New action",
-                    "type": "Button",
-                    "id": "0c07df84-681b-408d-a38c-a924e55aee92",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "1D Axis",
-                    "id": "b5753229-9ffc-44c4-9de9-0c5ace5b8e21",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "New action",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "c50c6244-52d8-4f23-a03f-6693d5940cab",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "New action",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "f04956fb-0e5a-466d-bed8-870bc34473fc",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "New action",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                }
-            ]
-        },
-        {
             "name": "Player1",
             "id": "38362984-ca78-4e6e-83fd-478cd1e169c9",
             "actions": [
                 {
                     "name": "MoveHorizontal",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "82c48c0e-9457-4afe-b55e-1eb9a27760f3",
+                    "expectedControlType": "Button",
+                    "processors": "AxisDeadzone",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "MoveVertical",
+                    "type": "Value",
+                    "id": "74caa468-151b-45a3-bae6-85c11065f9f0",
+                    "expectedControlType": "Button",
+                    "processors": "AxisDeadzone",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Brake",
+                    "type": "Button",
+                    "id": "29b6abc0-cfef-4836-bcd4-a36c7a8cff18",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "MoveVertical",
+                    "name": "Accel",
                     "type": "Button",
-                    "id": "74caa468-151b-45a3-bae6-85c11065f9f0",
+                    "id": "39006409-91e6-4fe9-8c82-83880d323e40",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "9a4099b1-e90d-44db-863b-4a452cf839cb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Attack",
+                    "type": "Button",
+                    "id": "52cc211e-62f5-497d-ab98-d2cef96fbf98",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
                     "initialStateCheck": false
                 }
             ],
@@ -175,7 +78,7 @@
                     "path": "<HID::QIXIONG Wire PS4 Controller>/stick/right",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Player1",
                     "action": "MoveHorizontal",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -186,7 +89,7 @@
                     "path": "<HID::QIXIONG Wire PS4 Controller>/stick/left",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Player1",
                     "action": "MoveHorizontal",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -208,7 +111,7 @@
                     "path": "<HID::QIXIONG Wire PS4 Controller>/stick/down",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Player1",
                     "action": "MoveVertical",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -219,10 +122,54 @@
                     "path": "<HID::QIXIONG Wire PS4 Controller>/stick/up",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Player1",
                     "action": "MoveVertical",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "2d2be20a-5328-40db-b816-70ab39006662",
+                    "path": "<HID::QIXIONG Wire PS4 Controller>/button7",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Brake",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "700df75d-7bce-4edd-b348-094b3b4484c4",
+                    "path": "<HID::QIXIONG Wire PS4 Controller>/button8",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Accel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "80cce21f-aa1b-42b8-a263-861bba8b9592",
+                    "path": "<HID::QIXIONG Wire PS4 Controller>/button2",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Player1",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d601edb6-c348-4e7f-84f4-66a76c7ce7b5",
+                    "path": "<HID::QIXIONG Wire PS4 Controller>/button3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -232,20 +179,56 @@
             "actions": [
                 {
                     "name": "MoveHorizontal",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "8b619d9b-5bc6-4ed9-9b95-3d43f6ede802",
+                    "expectedControlType": "Button",
+                    "processors": "AxisDeadzone",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "MoveVertical",
+                    "type": "Value",
+                    "id": "73cd9bdf-367c-4640-b264-e75203f5082a",
+                    "expectedControlType": "Button",
+                    "processors": "AxisDeadzone",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Brake",
+                    "type": "Button",
+                    "id": "5a79480f-5e66-46a5-bbd3-ac1eb177974c",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "MoveVertical",
+                    "name": "Accel",
                     "type": "Button",
-                    "id": "73cd9bdf-367c-4640-b264-e75203f5082a",
+                    "id": "cf83166a-03d9-490b-adfa-bcc61b5d38cb",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "27e2be21-8bbd-44b1-aaaa-cfba24bedd01",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Attack",
+                    "type": "Button",
+                    "id": "b4f9f1e4-283e-460b-830f-7831ffbf5c3b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
                     "initialStateCheck": false
                 }
             ],
@@ -264,7 +247,7 @@
                 {
                     "name": "negative",
                     "id": "d9ea313d-0a68-49b2-93f8-5091ebd1a63e",
-                    "path": "<HID::QIXIONG Wire PS4 Controller>/stick/down",
+                    "path": "<XInputController>/leftStick/left",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -275,7 +258,7 @@
                 {
                     "name": "positive",
                     "id": "476b7a77-9a74-4670-a60f-a438a9621277",
-                    "path": "<HID::QIXIONG Wire PS4 Controller>/stick/up",
+                    "path": "<XInputController>/leftStick/right",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -297,7 +280,7 @@
                 {
                     "name": "negative",
                     "id": "48120c91-2034-4ce6-a012-8215fea02809",
-                    "path": "<HID::QIXIONG Wire PS4 Controller>/stick/down",
+                    "path": "<XInputController>/leftStick/down",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -308,16 +291,454 @@
                 {
                     "name": "positive",
                     "id": "2f8c2cc0-4fbf-4129-83c4-a1704b1d3ffe",
-                    "path": "<HID::QIXIONG Wire PS4 Controller>/stick/up",
+                    "path": "<XInputController>/leftStick/up",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "MoveVertical",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "6dee05f5-b605-4b1c-bc08-fbaf65ee3896",
+                    "path": "<XInputController>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Brake",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a77adb7c-010e-4697-aa09-4502916211d8",
+                    "path": "<XInputController>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Accel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "888cd410-a8c0-4550-9360-0a742c8ebbc8",
+                    "path": "<XInputController>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "54923ebd-b6ab-4697-af0f-84282306d877",
+                    "path": "<XInputController>/buttonSouth",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Player2",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Player3",
+            "id": "77ee9941-45e5-4b31-bfb8-29033ae02f6a",
+            "actions": [
+                {
+                    "name": "MoveHorizontal",
+                    "type": "Value",
+                    "id": "64d95dd7-e463-4a04-bbe1-ae71c3a7e38f",
+                    "expectedControlType": "Button",
+                    "processors": "AxisDeadzone",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "MoveVertical",
+                    "type": "Value",
+                    "id": "b797384e-f9b1-4690-8a7c-d5786e42caa5",
+                    "expectedControlType": "Button",
+                    "processors": "AxisDeadzone",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Brake",
+                    "type": "Button",
+                    "id": "f2a9a054-d2b8-42cf-86a1-6027445f2232",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Accel",
+                    "type": "Button",
+                    "id": "36a5097a-d558-44f6-8716-1341b18978b3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "64c4d53e-bd67-4a19-b9b1-48020d3427ea",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Attack",
+                    "type": "Button",
+                    "id": "18db91d0-be73-449f-b984-eeaaba7be02c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "Controler",
+                    "id": "c993726c-3c9b-4b5e-9798-bba27b69b8ae",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveHorizontal",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "4a6ac2c6-b3ea-4814-8efe-bba532c88d5d",
+                    "path": "<DualShockGamepad>/leftStick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player3",
+                    "action": "MoveHorizontal",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "6e1010bf-ce98-4485-8509-f9e51524b7bb",
+                    "path": "<DualShockGamepad>/leftStick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player3",
+                    "action": "MoveHorizontal",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "0053d2e7-944e-4b33-80aa-1629b79adf7d",
+                    "path": "<DualShockGamepad>/buttonSouth",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Player3",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Controller",
+                    "id": "29f73811-5ed2-4f24-ab65-cd8c37aa5dd1",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveVertical",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "67043857-af99-4591-8091-a77ca4b51351",
+                    "path": "<DualShockGamepad>/leftStick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player3",
+                    "action": "MoveVertical",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "84dd6bcc-e9a3-4a01-ba9b-3d6bbf250e37",
+                    "path": "<DualShockGamepad>/leftStick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player3",
+                    "action": "MoveVertical",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "b25cf69c-8ed6-4ce7-8491-ae477d58e992",
+                    "path": "<DualShockGamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Accel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1bdaaf99-cb59-4946-87a9-01a0a6746f9c",
+                    "path": "<DualShockGamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "db2a6ce2-2fa5-4e87-9fab-d01ac5fc5ab4",
+                    "path": "<DualShockGamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Brake",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Player4",
+            "id": "4d6ca13c-59b4-446e-89b0-b5779b33bee6",
+            "actions": [
+                {
+                    "name": "MoveHorizontal",
+                    "type": "Value",
+                    "id": "fe837606-55d0-4208-83ca-38e9d7b06606",
+                    "expectedControlType": "Button",
+                    "processors": "AxisDeadzone",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "MoveVertical",
+                    "type": "Value",
+                    "id": "f68cba55-d920-4f9a-9738-5c9eb44b7ff7",
+                    "expectedControlType": "Button",
+                    "processors": "AxisDeadzone",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Brake",
+                    "type": "Button",
+                    "id": "7cefc4df-ff90-4a10-9497-645061e48435",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Accel",
+                    "type": "Button",
+                    "id": "64d963dc-b4d8-48bb-ba39-1f3e09387d2a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "8e7ca6a3-ef36-4219-84e0-81fcc4aa2159",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Attack",
+                    "type": "Button",
+                    "id": "5c8fb3ff-ab50-46de-8418-37cdd67826bd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "Controler",
+                    "id": "dfd420a8-f0b2-401f-8f01-2edd870c1edb",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveHorizontal",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "13d69171-ddc4-4060-9e2b-1a353e65abfd",
+                    "path": "<HID::HORI CO.,LTD. HORIPAD 4 >/stick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player4",
+                    "action": "MoveHorizontal",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "d990fa40-c75c-43f8-b691-30fb035adaf0",
+                    "path": "<HID::HORI CO.,LTD. HORIPAD 4 >/stick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player4",
+                    "action": "MoveHorizontal",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Controller",
+                    "id": "aa513eba-adbd-410c-877b-d0a1e023e7a6",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveVertical",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "c0e8292e-e46f-460b-852e-22fac4e78454",
+                    "path": "<HID::HORI CO.,LTD. HORIPAD 4 >/stick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player4",
+                    "action": "MoveVertical",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "b9ff3ad9-3e11-4cfc-b4e4-8d8d772a7c61",
+                    "path": "<HID::HORI CO.,LTD. HORIPAD 4 >/stick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player4",
+                    "action": "MoveVertical",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "ad00e653-5be3-416d-85fa-be98ed6c05e2",
+                    "path": "<HID::HORI CO.,LTD. HORIPAD 4 >/button7",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player4",
+                    "action": "Brake",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bf1a7959-3499-4c48-af38-0202e3be42be",
+                    "path": "<HID::HORI CO.,LTD. HORIPAD 4 >/button8",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player4",
+                    "action": "Accel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cc8865aa-8e2a-471c-9864-8dc1096d6aa6",
+                    "path": "<HID::HORI CO.,LTD. HORIPAD 4 >/button2",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Player4",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2d3f8569-9c27-46fc-b1f6-493d282a5920",
+                    "path": "<HID::HORI CO.,LTD. HORIPAD 4 >/button3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player4",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
     ],
-    "controlSchemes": []
+    "controlSchemes": [
+        {
+            "name": "Player1",
+            "bindingGroup": "Player1",
+            "devices": [
+                {
+                    "devicePath": "<HID::QIXIONG Wire PS4 Controller>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Player2",
+            "bindingGroup": "Player2",
+            "devices": [
+                {
+                    "devicePath": "<XInputController>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Player3",
+            "bindingGroup": "Player3",
+            "devices": [
+                {
+                    "devicePath": "<DualShockGamepad>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Player4",
+            "bindingGroup": "Player4",
+            "devices": [
+                {
+                    "devicePath": "<SwitchProControllerHID>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<HID::HORI CO.,LTD. HORIPAD 4 >",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
 }

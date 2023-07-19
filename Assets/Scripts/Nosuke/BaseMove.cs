@@ -24,6 +24,6 @@ public class BaseMove : MonoBehaviour
         rotation += Time.deltaTime * moveSpeed * 10; // ’l‚ð‚Ç‚ñ‚Ç‚ñ‘«‚µ‚Ä‚¢‚­
 
         // ‰ñ“]‚³‚¹‚é
-        transform.localEulerAngles = new Vector3(90, 0, rotation);
+        transform.localEulerAngles = new Vector3(0, rotation, 0);
     }
 }
