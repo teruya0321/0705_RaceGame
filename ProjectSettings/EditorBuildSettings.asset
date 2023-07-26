@@ -6,9 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Nosuke.unity
+    path: Assets/Scenes/Title.unity
+    guid: 5d2fb35395de8564fbc200bf0cdeff3a
+  - enabled: 1
+    path: Assets/Scenes/LoadMap.unity
+    guid: bc7fac71e143f4544a803a1846530869
+  - enabled: 1
+    path: Assets/Scenes/InsectSelect.unity
     guid: a8139d79d74386c44b16c682d25f1421
   - enabled: 1
-    path: Assets/Scenes/Nosuke2.unity
-    guid: 9543fd8486686454c9f270b46f63ea0f
+    path: Assets/Scenes/Main.unity
+    guid: 7722447f2663dbc43826304ca6c0c22d
+  - enabled: 1
+    path: Assets/Scenes/RaceGoal.unity
+    guid: fa2a3df6e52a0014b943f0c461fe7d26
+  - enabled: 1
+    path: Assets/Scenes/OverallRanking.unity
+    guid: a45da93708d21ca428fd05b970200e5e
   m_configObjects: {}

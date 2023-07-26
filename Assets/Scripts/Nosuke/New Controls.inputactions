@@ -152,7 +152,7 @@
                 {
                     "name": "",
                     "id": "80cce21f-aa1b-42b8-a263-861bba8b9592",
-                    "path": "<HID::QIXIONG Wire PS4 Controller>/button2",
+                    "path": "<HID::QIXIONG Wire PS4 Controller>/button3",
                     "interactions": "Press",
                     "processors": "",
                     "groups": "Player1",
@@ -163,7 +163,7 @@
                 {
                     "name": "",
                     "id": "d601edb6-c348-4e7f-84f4-66a76c7ce7b5",
-                    "path": "<HID::QIXIONG Wire PS4 Controller>/button3",
+                    "path": "<HID::QIXIONG Wire PS4 Controller>/button2",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -684,6 +684,142 @@
                     "processors": "",
                     "groups": "Player4",
                     "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "AllController",
+            "id": "4696f3f1-8574-423d-a9c4-b3deb230308f",
+            "actions": [
+                {
+                    "name": "Action",
+                    "type": "Button",
+                    "id": "e6d4ca56-fcb7-4626-b418-617019afd23f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Back",
+                    "type": "Button",
+                    "id": "0700a01a-ea8d-46f1-b3f9-79f9790a1d7d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b7f3e1fb-0711-41a1-ac15-a2a404972f72",
+                    "path": "<DualShockGamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "48de2788-1d88-4176-8898-15213aeca3c1",
+                    "path": "<XInputController>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cd4c87a7-09e6-4b2e-b4ec-49b0ea035184",
+                    "path": "<HID::QIXIONG Wire PS4 Controller>/button3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "123527d9-223b-470a-9ce3-f6f95aa0dddd",
+                    "path": "<SwitchProControllerHID>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "81a9294c-2359-4742-8f41-1e4ff77c2034",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "007fea87-4634-45c7-ae30-1143a5fa3bf5",
+                    "path": "<SwitchProControllerHID>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Back",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cbf79572-6d33-4df7-b561-8bcf5a6ac667",
+                    "path": "<HID::QIXIONG Wire PS4 Controller>/button3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Back",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f53a2c6f-6dd6-4850-8e76-3d59aba8f4d2",
+                    "path": "<XInputController>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Back",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5e9801cd-d201-435a-bff7-bb477e6fb3d4",
+                    "path": "<DualShockGamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Back",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d362dfac-459d-47ac-b969-f3ca42d8569e",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Back",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

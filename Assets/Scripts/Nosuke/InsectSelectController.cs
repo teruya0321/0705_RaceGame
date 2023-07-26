@@ -17,7 +17,7 @@ public class InsectSelectController : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log("test");
+        //Debug.Log("test");
 
         if(instance == null)
         {
@@ -59,7 +59,7 @@ public class InsectSelectController : MonoBehaviour
                 DontDestroyOnLoad(dic["Player" + i]);
                 Destroy(dic["Player" + i].GetComponent<SelectInsect>());
             }
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(3);
         }
     }
 
