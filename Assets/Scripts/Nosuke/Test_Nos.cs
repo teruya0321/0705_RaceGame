@@ -4,20 +4,59 @@ using UnityEngine;
 
 public class Test_Nos : MonoBehaviour
 {
-    
-    void Start()
+    public float maxPower;
+    public float angle;
+    public float breake;
+    public WheelCollider wcFL,wcFR,wcBL,wcBR;
+    enum Drive {FRONT,BACK}
+
+    Drive drive;
+    private void Start()
     {
-        for (int i = 1; i <= InsectSelectController.instance.playerList.Count; i++)
+        drive = Drive.FRONT;
+    }
+    void DRIVE()
+    {
+        float power = maxPower * Input.GetAxis("Vertical");
+        float steering = angle * Input.GetAxis("Horizontal");
+
+        wcFL.steerAngle = steering;
+        wcFR.steerAngle = steering;
+
+        if(drive == Drive.BACK)
         {
-            int x = Random.Range(-10, 10);
-            int y = Random.Range(-10, 10);
-
-            Vector3 pos = new Vector3(x, y, 0);
-
-            Debug.Log(InsectSelectController.instance.dic["Player" + i]);
-            InsectSelectController.instance.dic["Player" + i].transform.position = pos;
-
-
+            wcBR.motorTorque = power;
+            wcBL.motorTorque = power;
         }
+        else
+        {
+            wcFR.motorTorque = power;
+            wcFL.motorTorque = power;
+        }
+
+    }
+
+    void BREAKE()
+    {
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            wcFL.brakeTorque = breake;
+            wcFR.brakeTorque = breake;
+            wcBL.brakeTorque = breake;
+            wcBR.brakeTorque = breake;
+        }
+        else
+        {
+            wcFL.brakeTorque = 0;
+            wcFR.brakeTorque = 0;
+            wcBL.brakeTorque = 0;
+            wcBR.brakeTorque = 0;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        DRIVE();
+        BREAKE();
     }
 }

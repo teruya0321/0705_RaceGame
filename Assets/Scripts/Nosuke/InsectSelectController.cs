@@ -32,7 +32,7 @@ public class InsectSelectController : MonoBehaviour
         //dic.Clear();
 
         Application.targetFrameRate = 60;
-        csvFile = Resources.Load("CSVs/InsectSelectTest") as TextAsset;
+        csvFile = Resources.Load("CSVs/InsectSelectTest2") as TextAsset;
         StringReader reader = new StringReader(csvFile.text);
         while (reader.Peek() != -1)
         {
@@ -56,12 +56,19 @@ public class InsectSelectController : MonoBehaviour
             for(int i = 1;  i <= dic.Count; i++)
             {
                 dic["Player" + i].gameObject.transform.parent = null;
+                dic["Player" + i].gameObject.transform.localEulerAngles = Vector3.zero;
+                dic["Player" + i].gameObject.transform.position = new Vector3(0, Random.Range(-3, 3), 0);
                 DontDestroyOnLoad(dic["Player" + i]);
                 Destroy(dic["Player" + i].GetComponent<SelectInsect>());
             }
             SceneManager.LoadScene(3);
+
+            Invoke("DestroyController", 1);
         }
     }
 
-
+    void DestroyController()
+    {
+        Destroy(gameObject);
+    }
 }
