@@ -29,6 +29,8 @@ public class SelectInsect : MonoBehaviour
     public AudioClip selectSE;
     //選択した時の効果音
 
+    ReloadMiddleConectPoint middleConect;
+
     void Awake()
     {
         //input = GetComponent<PlayerInput>();
@@ -93,6 +95,13 @@ public class SelectInsect : MonoBehaviour
         bodyList[bodyNumber - 1] = Instantiate((GameObject)Resources.Load("TestPrefab/" + selectCon.insectSelectCSVDatas[insectNumber][bodyNumber]),
                                    conectPoint[bodyNumber - 1]);
         // CSVから対応したオブジェクトを生成する
+
+        if(bodyNumber == 2)
+        {
+            middleConect = bodyList[bodyNumber - 1].AddComponent<ReloadMiddleConectPoint>();
+
+            middleConect.ReloadMiddle(conectPoint[0].gameObject, conectPoint[2].gameObject);
+        }
     }
     // コントローラー用の関数
     public void InsectDecide(InputAction.CallbackContext context)
