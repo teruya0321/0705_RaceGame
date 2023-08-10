@@ -29,24 +29,24 @@ public class ControllerTest : MonoBehaviour
 
 
     // Event型で取得するためpublicに。PlayerInputコンポーネントと合わせて使う。わからんかったら聞いてくれ
-    public void JumpButton(InputAction.CallbackContext context)
+    public void Jump(InputAction.CallbackContext context)
     {
         if (!context.performed) return;
         Debug.Log(gameObject.name + "がジャンプを押したぜ！");
     }
-    public void AttackButton(InputAction.CallbackContext context)
+    public void Attack(InputAction.CallbackContext context)
     {
         if (!context.performed) return;
         Debug.Log(gameObject.name + "がアタックしたぜ！");
     }
 
     // 下二つは長押しの判定をつけたいから要改良
-    public void AccelButton(InputAction.CallbackContext context)
+    public void Accel(InputAction.CallbackContext context)
     {
         if (!context.performed) return;
         Debug.Log(gameObject.name + "がアクセルをふかすぜ！");
     }
-    public void BrakeButton(InputAction.CallbackContext context)
+    public void Brake(InputAction.CallbackContext context)
     {
         if (!context.performed) return;
         Debug.Log(gameObject.name + "がブレーキをかけるぜ！");
