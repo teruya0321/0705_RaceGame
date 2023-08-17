@@ -1,0 +1,1578 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: walk_top
+  serializedVersion: 7
+  m_Legacy: 0
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.2736477, y: 0.6520099, z: 0.2736477, w: 0.6520099}
+        inSlope: {x: -0.033417463, y: 0.01398325, z: -0.033417463, w: 0.01398325}
+        outSlope: {x: -0.033417463, y: 0.01398325, z: -0.033417463, w: 0.01398325}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5
+        value: {x: 0.270899, y: 0.65315676, z: 0.270899, w: 0.65315676}
+        inSlope: {x: 0.03586864, y: -0.014870165, z: 0.03586864, w: -0.014870165}
+        outSlope: {x: 0.03586864, y: -0.014870165, z: 0.03586864, w: -0.014870165}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: 0.27310145, y: 0.6522391, z: 0.27310145, w: 0.6522391}
+        inSlope: {x: 0.01736331, y: -0.007276535, z: 0.01736331, w: -0.007276535}
+        outSlope: {x: 0.01736331, y: -0.007276535, z: 0.01736331, w: -0.007276535}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.21891087, y: 0.006131036, z: 0.97534317, w: -0.027316432}
+        inSlope: {x: 0.0017498732, y: 0.04261876, z: -0.006784916, w: -0.18976396}
+        outSlope: {x: 0.0017498732, y: 0.04261876, z: -0.006784916, w: -0.18976396}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.375
+        value: {x: 0.21857707, y: 0.015467491, z: 0.973261, w: -0.068905115}
+        inSlope: {x: 0.0045511713, y: -0.036242753, z: 0.010792492, w: 0.16160253}
+        outSlope: {x: 0.0045511713, y: -0.036242753, z: 0.010792492, w: 0.16160253}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: 0.21893042, y: 0.006943327, z: 0.9752024, w: -0.03093322}
+        inSlope: {x: -0.0002834797, y: -0.026819171, z: 0.004947424, w: 0.11941572}
+        outSlope: {x: -0.0002834797, y: -0.026819171, z: 0.004947424, w: 0.11941572}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_touch_L1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.081860736, y: 0.05949712, z: -0.20463353, w: 0.97359335}
+        inSlope: {x: 0.07001388, y: 0.00018426776, z: 0.17664313, w: 0.042192936}
+        outSlope: {x: 0.07001388, y: 0.00018426776, z: 0.17664313, w: 0.042192936}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.375
+        value: {x: -0.06635059, y: 0.059918996, z: -0.16579781, w: 0.982099}
+        inSlope: {x: -0.061007634, y: -0.0033743079, z: -0.15147522, w: -0.029687397}
+        outSlope: {x: -0.061007634, y: -0.0033743079, z: -0.15147522, w: -0.029687397}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: -0.08052305, y: 0.059507966, z: -0.20126449, w: 0.9743833}
+        inSlope: {x: -0.04425107, y: -0.00055001676, z: -0.11129624, w: -0.025706768}
+        outSlope: {x: -0.04425107, y: -0.00055001676, z: -0.11129624, w: -0.025706768}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_touch_L1/DevilsFlowerMantis_touch_L2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.0046815565, y: -0.005133589, z: 0.013910723, w: 0.9998791}
+        inSlope: {x: 0.06204298, y: -0.0025132857, z: 0.18443193, w: -0.0036592484}
+        outSlope: {x: 0.06204298, y: -0.0025132857, z: 0.18443193, w: -0.0036592484}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.375
+        value: {x: 0.018284943, y: -0.005229019, z: 0.0543319, w: 0.9983418}
+        inSlope: {x: -0.052871563, y: -0.0016952341, z: -0.15708274, w: 0.009310482}
+        outSlope: {x: -0.052871563, y: -0.0016952341, z: -0.15708274, w: 0.009310482}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: 0.0058642514, y: -0.005172722, z: 0.017425895, w: 0.9997952}
+        inSlope: {x: -0.03905323, y: 0.0010623634, z: -0.11605939, w: 0.003140688}
+        outSlope: {x: -0.03905323, y: 0.0010623634, z: -0.11605939, w: 0.003140688}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_touch_L1/DevilsFlowerMantis_touch_L2/DevilsFlowerMantis_touch_L3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0.062964454, y: -0.0025313974, z: 0.1841538, w: -0.0007882118}
+        outSlope: {x: 0.062964454, y: -0.0025313974, z: 0.1841538, w: -0.0007882118}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.375
+        value: {x: 0.013815115, y: -0.00010330985, z: 0.040368285, w: 0.99908936}
+        inSlope: {x: -0.05373873, y: -0.0016471492, z: -0.15691389, w: 0.0068864813}
+        outSlope: {x: -0.05373873, y: -0.0016471492, z: -0.15691389, w: 0.0068864813}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: 0.0012004444, y: -0.00003955437, z: 0.0035100237, w: 0.9999708}
+        inSlope: {x: -0.039644223, y: 0.0010782764, z: -0.11589353, w: 0.0013372898}
+        outSlope: {x: -0.039644223, y: 0.0010782764, z: -0.11589353, w: 0.0013372898}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_touch_L1/DevilsFlowerMantis_touch_L2/DevilsFlowerMantis_touch_L3/DevilsFlowerMantis_touch_L4
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.069159, y: -0.19755302, z: 0.19670975, w: 0.9578597}
+        inSlope: {x: -0.10380399, y: -0.21565211, z: 1.3373752, w: -0.36974144}
+        outSlope: {x: -0.10380399, y: -0.21565211, z: 1.3373752, w: -0.36974144}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.125
+        value: {x: -0.10179637, y: -0.22838402, z: 0.3702314, w: 0.89465463}
+        inSlope: {x: -0.45327544, y: -0.24856442, z: 1.2654687, w: -0.6325321}
+        outSlope: {x: -0.45327544, y: -0.24856442, z: 1.2654687, w: -0.6325321}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.20833334
+        value: {x: -0.13849147, y: -0.24348773, z: 0.45146552, w: 0.8471793}
+        inSlope: {x: -0.33422962, y: -0.07041227, z: 0.5375154, w: -0.35045743}
+        outSlope: {x: -0.33422962, y: -0.07041227, z: 0.5375154, w: -0.35045743}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.2916667
+        value: {x: -0.14684987, y: -0.24431108, z: 0.42867336, w: 0.85731345}
+        inSlope: {x: 0.35388806, y: 0.0057163313, z: -1.3899472, w: 0.70525146}
+        outSlope: {x: 0.35388806, y: 0.0057163313, z: -1.3899472, w: 0.70525146}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.33333334
+        value: {x: -0.11968851, y: -0.24314268, z: 0.34743038, w: 0.8976906}
+        inSlope: {x: 0.6590207, y: 0.05449678, z: -1.7519674, w: 0.80268884}
+        outSlope: {x: 0.6590207, y: 0.05449678, z: -1.7519674, w: 0.80268884}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.375
+        value: {x: -0.09193149, y: -0.23976968, z: 0.2826761, w: 0.9242042}
+        inSlope: {x: 0.4982698, y: 0.14283241, z: -1.1264877, w: 0.45991373}
+        outSlope: {x: 0.4982698, y: 0.14283241, z: -1.1264877, w: 0.45991373}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.45833334
+        value: {x: -0.06882601, y: -0.21970122, z: 0.23423296, w: 0.94452596}
+        inSlope: {x: 0.14095834, y: 0.25555468, z: -0.41670185, w: 0.17490223}
+        outSlope: {x: 0.14095834, y: 0.25555468, z: -0.41670185, w: 0.17490223}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833334
+        value: {x: -0.06720509, y: -0.19862883, z: 0.1967417, w: 0.9577697}
+        inSlope: {x: -0.042202037, y: 0.10278506, z: -0.20605005, w: 0.061955422}
+        outSlope: {x: -0.042202037, y: 0.10278506, z: -0.20605005, w: 0.061955422}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_leg_L1_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.09286616, y: 0.10252739, z: -0.6120701, w: 0.77861047}
+        inSlope: {x: -0.01711303, y: 0.10260397, z: -1.2449899, w: -1.0664377}
+        outSlope: {x: -0.01711303, y: 0.10260397, z: -1.2449899, w: -1.0664377}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.083333336
+        value: {x: -0.09093251, y: 0.11112153, z: -0.713628, w: 0.68565184}
+        inSlope: {x: 0.1187625, y: 0.1129438, z: -1.0883152, w: -1.1262295}
+        outSlope: {x: 0.1187625, y: 0.1129438, z: -1.0883152, w: -1.1262295}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.20833334
+        value: {x: -0.07197269, y: 0.119816735, z: -0.80328196, w: 0.5789663}
+        inSlope: {x: 0.08116132, y: 0.014918624, z: -0.3003266, w: -0.4010024}
+        outSlope: {x: 0.08116132, y: 0.014918624, z: -0.3003266, w: -0.4010024}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.25
+        value: {x: -0.07010418, y: 0.12005171, z: -0.80980766, w: 0.56998646}
+        inSlope: {x: 0.025197659, y: 0.0031063561, z: -0.08778192, w: -0.12095548}
+        outSlope: {x: 0.025197659, y: 0.0031063561, z: -0.08778192, w: -0.12095548}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.2916667
+        value: {x: -0.069872886, y: 0.1200756, z: -0.8105971, w: 0.5688867}
+        inSlope: {x: -0.06690441, y: -0.01130158, z: 0.24397594, w: 0.32821736}
+        outSlope: {x: -0.06690441, y: -0.01130158, z: 0.24397594, w: 0.32821736}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.375
+        value: {x: -0.08307236, y: 0.11651627, z: -0.75759727, w: 0.63684326}
+        inSlope: {x: -0.15183842, y: -0.06946178, z: 0.7161948, w: 0.85273284}
+        outSlope: {x: -0.15183842, y: -0.06946178, z: 0.7161948, w: 0.85273284}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5
+        value: {x: -0.09356854, y: 0.10701313, z: -0.6670267, w: 0.73134714}
+        inSlope: {x: -0.0049824733, y: -0.048446678, z: 0.72260135, w: 0.66978616}
+        outSlope: {x: -0.0049824733, y: -0.048446678, z: 0.72260135, w: 0.66978616}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833334
+        value: {x: -0.09303591, y: 0.10310299, z: -0.6182369, w: 0.773626}
+        inSlope: {x: 0.009655233, y: -0.042857926, z: 0.49149632, w: 0.41074827}
+        outSlope: {x: 0.009655233, y: -0.042857926, z: 0.49149632, w: 0.41074827}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_leg_L1_1/DevilsFlowerMantis_leg_L1_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.080116846, y: -0.119013384, z: 0.61139697, w: 0.7782101}
+        inSlope: {x: 0.50303525, y: -0.079331696, z: 0.7064853, w: -0.6506038}
+        outSlope: {x: 0.50303525, y: -0.079331696, z: 0.7064853, w: -0.6506038}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.125
+        value: {x: 0.14791831, y: -0.12198588, z: 0.7057797, w: 0.6819931}
+        inSlope: {x: 0.5130744, y: 0.06188929, z: 0.7060046, w: -0.8253329}
+        outSlope: {x: 0.5130744, y: 0.06188929, z: 0.7060046, w: -0.8253329}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.25
+        value: {x: 0.18600143, y: -0.11284169, z: 0.75781846, w: 0.61512715}
+        inSlope: {x: -0.022584863, y: -0.028774979, z: -0.07625189, w: 0.091912374}
+        outSlope: {x: -0.022584863, y: -0.028774979, z: -0.07625189, w: 0.091912374}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.375
+        value: {x: 0.13854414, y: -0.1286255, z: 0.6769091, w: 0.7113755}
+        inSlope: {x: -0.6050669, y: -0.076438405, z: -0.99375904, w: 1.0457016}
+        outSlope: {x: -0.6050669, y: -0.076438405, z: -0.99375904, w: 1.0457016}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5
+        value: {x: 0.068228394, y: -0.12314272, z: 0.5619367, w: 0.81511223}
+        inSlope: {x: -0.30870342, y: 0.07444453, z: -0.50591326, w: 0.39759064}
+        outSlope: {x: -0.30870342, y: 0.07444453, z: -0.50591326, w: 0.39759064}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: 0.057354186, y: -0.1194884, z: 0.5488733, w: 0.8255327}
+        inSlope: {x: -0.012527049, y: 0.017881393, z: 0.047980785, w: -0.035487175}
+        outSlope: {x: -0.012527049, y: 0.017881393, z: 0.047980785, w: -0.035487175}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_leg_L1_1/DevilsFlowerMantis_leg_L1_2/DevilsFlowerMantis_leg_L1_3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833334
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_leg_L1_1/DevilsFlowerMantis_leg_L1_2/DevilsFlowerMantis_leg_L1_3/DevilsFlowerMantis_leg_L1_4
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.21891634, y: -0.006132385, z: 0.9753418, w: -0.027321724}
+        inSlope: {x: -0.00083756447, y: 0.015664995, z: 0.0017580986, w: 0.06986211}
+        outSlope: {x: -0.00083756447, y: 0.015664995, z: 0.0017580986, w: 0.06986211}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.45833334
+        value: {x: -0.21899654, y: -0.0040960987, z: 0.9755465, w: -0.018244239}
+        inSlope: {x: 0.00033599147, y: -0.0179576, z: -0.0014963154, w: -0.0800045}
+        outSlope: {x: 0.00033599147, y: -0.0179576, z: -0.0014963154, w: -0.0800045}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: -0.21893197, y: -0.005856153, z: 0.9753735, w: -0.026089692}
+        inSlope: {x: 0.0004821718, y: -0.008920033, z: -0.0010056497, w: -0.03978131}
+        outSlope: {x: 0.0004821718, y: -0.008920033, z: -0.0010056497, w: -0.03978131}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_touch_R1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.08186138, y: -0.059505623, z: -0.20463361, w: 0.9735928}
+        inSlope: {x: 0.026004732, y: 0.0012949705, z: -0.06481576, w: -0.015841484}
+        outSlope: {x: 0.026004732, y: 0.0012949705, z: -0.06481576, w: -0.015841484}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.45833334
+        value: {x: 0.085234255, y: -0.05935274, z: -0.21305017, w: 0.97150505}
+        inSlope: {x: -0.029647447, y: -0.0011478963, z: 0.074110344, w: 0.01878262}
+        outSlope: {x: -0.029647447, y: -0.0011478963, z: 0.074110344, w: 0.01878262}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: 0.08232018, y: -0.05948231, z: -0.20577684, w: 0.97331434}
+        inSlope: {x: -0.014809416, y: -0.00074033445, z: 0.036909435, w: 0.009015084}
+        outSlope: {x: -0.014809416, y: -0.00074033445, z: 0.036909435, w: 0.009015084}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_touch_R1/DevilsFlowerMantis_touch_R2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.0046805413, y: 0.0051362338, z: 0.013907869, w: 0.9998792}
+        inSlope: {x: 0.022835333, y: 0.00034764782, z: -0.06787889, w: 0.00094127655}
+        outSlope: {x: 0.022835333, y: 0.00034764782, z: -0.06787889, w: 0.00094127655}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.45833334
+        value: {x: -0.0017130827, y: 0.0051632365, z: 0.0050884625, w: 0.9999723}
+        inSlope: {x: -0.0261576, y: -0.0000022742897, z: 0.07772376, w: -0.00044059762}
+        outSlope: {x: -0.0261576, y: -0.0000022742897, z: 0.07772376, w: -0.00044059762}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: -0.0042778254, y: 0.005142922, z: 0.012710745, w: 0.9998967}
+        inSlope: {x: -0.013003348, y: -0.00020145347, z: 0.038652785, w: -0.00054144865}
+        outSlope: {x: -0.013003348, y: -0.00020145347, z: 0.038652785, w: -0.00054144865}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_touch_R1/DevilsFlowerMantis_touch_R2/DevilsFlowerMantis_touch_R3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0.023190442, y: 0.00034290046, z: -0.067764856, w: -0.00010585785}
+        outSlope: {x: 0.023190442, y: 0.00034290046, z: -0.067764856, w: -0.00010585785}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.45833334
+        value: {x: 0.0030132094, y: 0.000026530244, z: -0.008804268, w: 0.9999567}
+        inSlope: {x: -0.02655574, y: -0.000000005806214, z: 0.07758613, w: 0.0007631781}
+        outSlope: {x: -0.02655574, y: -0.000000005806214, z: 0.07758613, w: 0.0007631781}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: 0.00040899063, y: 0.0000065999347, z: -0.0011951227, w: 0.99999905}
+        inSlope: {x: -0.013205639, y: -0.00019871433, z: 0.03858792, w: 0.000055074695}
+        outSlope: {x: -0.013205639, y: -0.00019871433, z: 0.03858792, w: 0.000055074695}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_touch_R1/DevilsFlowerMantis_touch_R2/DevilsFlowerMantis_touch_R3/DevilsFlowerMantis_touch_R4
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.16581964, y: 0.22783765, z: 0.5006238, w: 0.81851673}
+        inSlope: {x: 0.08506966, y: 0.085308194, z: -0.73654175, w: 0.39142942}
+        outSlope: {x: 0.08506966, y: 0.085308194, z: -0.73654175, w: 0.39142942}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0.16936421, y: 0.23139216, z: 0.46993458, w: 0.8348263}
+        inSlope: {x: -0.13676512, y: 0.20586562, z: -1.2168621, w: 0.61680937}
+        outSlope: {x: -0.13676512, y: 0.20586562, z: -1.2168621, w: 0.61680937}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.083333336
+        value: {x: 0.15442255, y: 0.24499312, z: 0.39921865, w: 0.8699175}
+        inSlope: {x: -0.52361894, y: 0.27872175, z: -1.5090115, w: 0.72123957}
+        outSlope: {x: -0.52361894, y: 0.27872175, z: -1.5090115, w: 0.72123957}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.125
+        value: {x: 0.12572931, y: 0.25461897, z: 0.34418362, w: 0.8949296}
+        inSlope: {x: -0.61275065, y: 0.004078947, z: -0.93099797, w: 0.46501565}
+        outSlope: {x: -0.61275065, y: 0.004078947, z: -0.93099797, w: 0.46501565}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.20833334
+        value: {x: 0.081562705, y: 0.23135094, z: 0.3019502, w: 0.9212222}
+        inSlope: {x: -0.45357454, y: -0.35490814, z: -0.447057, w: 0.27774668}
+        outSlope: {x: -0.45357454, y: -0.35490814, z: -0.447057, w: 0.27774668}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.33333334
+        value: {x: 0.06257948, y: 0.18943775, z: 0.26657918, w: 0.9429384}
+        inSlope: {x: 0.12511837, y: -0.20891069, z: -0.053774726, w: 0.049581543}
+        outSlope: {x: 0.12511837, y: -0.20891069, z: -0.053774726, w: 0.049581543}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.4166667
+        value: {x: 0.06894967, y: 0.18302457, z: 0.26366222, w: 0.9445794}
+        inSlope: {x: -0.009588275, y: -0.0017523714, z: -0.07461691, w: 0.021844622}
+        outSlope: {x: -0.009588275, y: -0.0017523714, z: -0.07461691, w: 0.021844622}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.45833334
+        value: {x: 0.06800594, y: 0.1835224, z: 0.26031253, w: 0.94547987}
+        inSlope: {x: 0.061077308, y: 0.108286165, z: 0.42913997, w: -0.15509395}
+        outSlope: {x: 0.061077308, y: 0.108286165, z: 0.42913997, w: -0.15509395}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5
+        value: {x: 0.074039444, y: 0.19204842, z: 0.29942387, w: 0.93165493}
+        inSlope: {x: 0.44172013, y: 0.28362978, z: 1.4827434, w: -0.6210907}
+        outSlope: {x: 0.44172013, y: 0.28362978, z: 1.4827434, w: -0.6210907}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5416667
+        value: {x: 0.10481597, y: 0.20715822, z: 0.3838745, w: 0.8937223}
+        inSlope: {x: 0.8501472, y: 0.3501472, z: 1.9866508, w: -1.0410156}
+        outSlope: {x: 0.8501472, y: 0.3501472, z: 1.9866508, w: -1.0410156}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833334
+        value: {x: 0.14488508, y: 0.22122736, z: 0.4649782, w: 0.8449036}
+        inSlope: {x: 0.9616582, y: 0.3376592, z: 1.9464874, w: -1.1716484}
+        outSlope: {x: 0.9616582, y: 0.3376592, z: 1.9464874, w: -1.1716484}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_leg_R1_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.046908908, y: -0.087522045, z: -0.83934885, w: 0.53444636}
+        inSlope: {x: -0.04719785, y: 0.0039183497, z: -0.17719316, w: -0.27781677}
+        outSlope: {x: -0.04719785, y: 0.0039183497, z: -0.17719316, w: -0.27781677}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.083333336
+        value: {x: 0.043975465, y: -0.08725027, z: -0.8502364, w: 0.51725394}
+        inSlope: {x: 0.025602672, y: -0.002081305, z: 0.09631635, w: 0.1508217}
+        outSlope: {x: 0.025602672, y: -0.002081305, z: 0.09631635, w: 0.1508217}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.25
+        value: {x: 0.06461172, y: -0.08412612, z: -0.7497265, w: 0.6531909}
+        inSlope: {x: 0.1206133, y: 0.065162286, z: 0.8230518, w: 0.9480127}
+        outSlope: {x: 0.1206133, y: 0.065162286, z: 0.8230518, w: 0.9480127}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.33333334
+        value: {x: 0.070450425, y: -0.07931218, z: -0.69692266, w: 0.7092567}
+        inSlope: {x: 0.021313462, y: 0.025839873, z: 0.36224064, w: 0.3617271}
+        outSlope: {x: 0.021313462, y: 0.025839873, z: 0.36224064, w: 0.3617271}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.4166667
+        value: {x: 0.07071847, y: -0.0784633, z: -0.67674464, w: 0.72860074}
+        inSlope: {x: 0.0016390975, y: 0.007918863, z: 0.1743929, w: 0.16383572}
+        outSlope: {x: 0.0016390975, y: 0.007918863, z: 0.1743929, w: 0.16383572}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.45833334
+        value: {x: 0.07075109, y: -0.078239, z: -0.67202467, w: 0.73297733}
+        inSlope: {x: -0.010717395, y: -0.019350534, z: -0.37084728, w: -0.36083373}
+        outSlope: {x: -0.010717395, y: -0.019350534, z: -0.37084728, w: -0.36083373}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5
+        value: {x: 0.06982535, y: -0.080075845, z: -0.7076486, w: 0.69853127}
+        inSlope: {x: -0.117085926, y: -0.09052587, z: -1.2096481, w: -1.2858285}
+        outSlope: {x: -0.117085926, y: -0.09052587, z: -1.2096481, w: -1.2858285}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5416667
+        value: {x: 0.06099393, y: -0.085782826, z: -0.7728287, w: 0.6258249}
+        inSlope: {x: -0.22308771, y: -0.09010224, z: -1.3693686, w: -1.6537006}
+        outSlope: {x: -0.22308771, y: -0.09010224, z: -1.3693686, w: -1.6537006}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833334
+        value: {x: 0.0512347, y: -0.08758437, z: -0.8217627, w: 0.5607228}
+        inSlope: {x: -0.23422138, y: -0.04323701, z: -1.174415, w: -1.5624497}
+        outSlope: {x: -0.23422138, y: -0.04323701, z: -1.174415, w: -1.5624497}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_leg_R1_1/DevilsFlowerMantis_leg_R1_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.13444564, y: 0.08011093, z: 0.72664547, w: 0.6689492}
+        inSlope: {x: -1.4709753, y: -0.4733398, z: 1.6676617, w: -2.3891988}
+        outSlope: {x: -1.4709753, y: -0.4733398, z: 1.6676617, w: -2.3891988}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: -0.19573627, y: 0.06038844, z: 0.7961314, w: 0.56939924}
+        inSlope: {x: -1.3810382, y: -0.6698708, z: 1.5205178, w: -2.5423465}
+        outSlope: {x: -1.3810382, y: -0.6698708, z: 1.5205178, w: -2.5423465}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.083333336
+        value: {x: -0.24953215, y: 0.024288362, z: 0.8533553, w: 0.45708698}
+        inSlope: {x: -0.9004117, y: -0.6905754, z: 0.9398575, w: -2.0027723}
+        outSlope: {x: -0.9004117, y: -0.6905754, z: 0.9398575, w: -2.0027723}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.125
+        value: {x: -0.27077058, y: 0.0028404873, z: 0.8744528, w: 0.40250155}
+        inSlope: {x: -0.10188554, y: 0.029382765, z: -0.051959693, w: 0.038417697}
+        outSlope: {x: -0.10188554, y: 0.029382765, z: -0.051959693, w: 0.038417697}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.20833334
+        value: {x: -0.2245506, y: 0.06378956, z: 0.7915883, w: 0.5647087}
+        inSlope: {x: 1.0041789, y: 0.76825464, z: -1.6325557, w: 2.553431}
+        outSlope: {x: 1.0041789, y: 0.76825464, z: -1.6325557, w: 2.553431}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.25
+        value: {x: -0.17434104, y: 0.090758145, z: 0.712979, w: 0.67307436}
+        inSlope: {x: 1.2401099, y: 0.40995318, z: -1.8203535, w: 2.253461}
+        outSlope: {x: 1.2401099, y: 0.40995318, z: -1.8203535, w: 2.253461}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.2916667
+        value: {x: -0.121208094, y: 0.09795232, z: 0.63989216, w: 0.75249714}
+        inSlope: {x: 1.0956678, y: 0.012703866, z: -1.2615563, w: 1.335224}
+        outSlope: {x: 1.0956678, y: 0.012703866, z: -1.2615563, w: 1.335224}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.33333334
+        value: {x: -0.083035365, y: 0.091816805, z: 0.6078493, w: 0.78434306}
+        inSlope: {x: 0.7019522, y: -0.12761721, z: -0.6042303, w: 0.5766758}
+        outSlope: {x: 0.7019522, y: -0.12761721, z: -0.6042303, w: 0.5766758}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.375
+        value: {x: -0.06271209, y: 0.087317556, z: 0.58953965, w: 0.80055344}
+        inSlope: {x: 0.30919087, y: -0.08996665, z: -0.09559691, w: 0.11070522}
+        outSlope: {x: 0.30919087, y: -0.08996665, z: -0.09559691, w: 0.11070522}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.45833334
+        value: {x: -0.05719825, y: 0.08345903, z: 0.6118773, w: 0.78445464}
+        inSlope: {x: -0.032831497, y: -0.007851096, z: 0.21667461, w: -0.16935614}
+        outSlope: {x: -0.032831497, y: -0.007851096, z: 0.21667461, w: -0.16935614}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: -0.066246465, y: 0.08404867, z: 0.6304844, w: 0.768798}
+        inSlope: {x: -0.060073975, y: 0.0076612835, z: 0.06760348, w: -0.061744813}
+        outSlope: {x: -0.060073975, y: 0.0076612835, z: 0.06760348, w: -0.061744813}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_leg_R1_1/DevilsFlowerMantis_leg_R1_2/DevilsFlowerMantis_leg_R1_3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833334
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_leg_R1_1/DevilsFlowerMantis_leg_R1_2/DevilsFlowerMantis_leg_R1_3/DevilsFlowerMantis_leg_R1_4
+  m_CompressedRotationCurves: []
+  m_EulerCurves: []
+  m_PositionCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.00005216064, y: 0.0022066878, z: -0.00039916634}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: -0.00005216064, y: 0.0022066878, z: -0.00039916634}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.00089009805, y: 0.000112035224, z: -0.0004146955}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: 0.00089009805, y: 0.000112035224, z: -0.0004146955}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_touch_L1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.0027724644, y: 2.6163458e-18, z: -3.8475673e-19}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: -0.0027724644, y: 2.6163458e-18, z: -3.8475673e-19}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_touch_L1/DevilsFlowerMantis_touch_L2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.0026720169, y: -7.4163365e-19, z: 2.6832457e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: -0.0026720169, y: -7.4163365e-19, z: 2.6832457e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_touch_L1/DevilsFlowerMantis_touch_L2/DevilsFlowerMantis_touch_L3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.002685154, y: 8.881784e-18, z: -3.7470024e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: -0.002685154, y: 8.881784e-18, z: -3.7470024e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_touch_L1/DevilsFlowerMantis_touch_L2/DevilsFlowerMantis_touch_L3/DevilsFlowerMantis_touch_L4
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.032780636, y: -6.8454225e-18, z: -1.2510375e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: -0.032780636, y: -6.8454225e-18, z: -1.2510375e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_leg_L1_1/DevilsFlowerMantis_leg_L1_2/DevilsFlowerMantis_leg_L1_3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.0008901076, y: 0.00011201362, z: 0.000414696}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: 0.0008901076, y: 0.00011201362, z: 0.000414696}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_touch_R1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.0027723976, y: 5.7133204e-18, z: 3.2876792e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: -0.0027723976, y: 5.7133204e-18, z: 3.2876792e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_touch_R1/DevilsFlowerMantis_touch_R2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.002672052, y: -7.395773e-19, z: -2.3861148e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: -0.002672052, y: -7.395773e-19, z: -2.3861148e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_touch_R1/DevilsFlowerMantis_touch_R2/DevilsFlowerMantis_touch_R3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.0026851834, y: 2.6645352e-17, z: -2.081668e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: -0.0026851834, y: 2.6645352e-17, z: -2.081668e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_touch_R1/DevilsFlowerMantis_touch_R2/DevilsFlowerMantis_touch_R3/DevilsFlowerMantis_touch_R4
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.032702956, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: -0.032702956, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_leg_R1_1/DevilsFlowerMantis_leg_R1_2/DevilsFlowerMantis_leg_R1_3
+  m_ScaleCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_touch_L1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_touch_L1/DevilsFlowerMantis_touch_L2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_touch_L1/DevilsFlowerMantis_touch_L2/DevilsFlowerMantis_touch_L3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_touch_L1/DevilsFlowerMantis_touch_L2/DevilsFlowerMantis_touch_L3/DevilsFlowerMantis_touch_L4
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833334
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_leg_L1_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833334
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_leg_L1_1/DevilsFlowerMantis_leg_L1_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_leg_L1_1/DevilsFlowerMantis_leg_L1_2/DevilsFlowerMantis_leg_L1_3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_touch_R1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_touch_R1/DevilsFlowerMantis_touch_R2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_touch_R1/DevilsFlowerMantis_touch_R2/DevilsFlowerMantis_touch_R3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_touch_R1/DevilsFlowerMantis_touch_R2/DevilsFlowerMantis_touch_R3/DevilsFlowerMantis_touch_R4
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833334
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_leg_R1_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833334
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_leg_R1_1/DevilsFlowerMantis_leg_R1_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833333
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: rig_top/DevilsFlowerMantis_head_1/DevilsFlowerMantis_leg_R1_1/DevilsFlowerMantis_leg_R1_2/DevilsFlowerMantis_leg_R1_3
+  m_FloatCurves: []
+  m_PPtrCurves: []
+  m_SampleRate: 24
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings: []
+    pptrCurveMapping: []
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_AdditiveReferencePoseClip: {fileID: 0}
+    m_AdditiveReferencePoseTime: 0
+    m_StartTime: 0
+    m_StopTime: 0.5833334
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_HasAdditiveReferencePose: 0
+    m_LoopTime: 0
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves: []
+  m_EulerEditorCurves: []
+  m_HasGenericRootTransform: 0
+  m_HasMotionFloatCurves: 0
+  m_Events: []
