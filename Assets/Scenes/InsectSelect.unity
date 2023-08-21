@@ -225,7 +225,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 80261805}
   m_LocalRotation: {x: 0.13052616, y: 0, z: 0, w: 0.9914449}
-  m_LocalPosition: {x: -20, y: 0.94, z: -2.05}
+  m_LocalPosition: {x: -20, y: 0.229, z: -0.464}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -263,7 +263,7 @@ Camera:
     y: 0
     width: 0.5
     height: 0.5
-  near clip plane: 0.3
+  near clip plane: 0.1
   far clip plane: 10
   field of view: 60
   orthographic: 0
@@ -293,7 +293,6 @@ GameObject:
   m_Component:
   - component: {fileID: 110335466}
   - component: {fileID: 110335467}
-  - component: {fileID: 110335468}
   m_Layer: 0
   m_Name: InsectSelectController
   m_TagString: GameController
@@ -329,25 +328,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerList: []
---- !u!114 &110335468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 110335465}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77e6a41ea4371d54487fea261e6c7831, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxPower: 0
-  angle: 0
-  breake: 0
-  wcFL: {fileID: 0}
-  wcFR: {fileID: 0}
-  wcBL: {fileID: 0}
-  wcBR: {fileID: 0}
 --- !u!1 &254835910
 GameObject:
   m_ObjectHideFlags: 0
@@ -546,7 +526,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 442839884}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -608,13 +588,21 @@ MonoBehaviour:
     m_ActionId: 52cc211e-62f5-497d-ab98-d2cef96fbf98
     m_ActionName: Player1/Attack[/SwitchProControllerHID/buttonEast]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 442839888}
+        m_TargetAssemblyTypeName: ControllerTest, Assembly-CSharp
+        m_MethodName: Horizontal
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 8b619d9b-5bc6-4ed9-9b95-3d43f6ede802
     m_ActionName: Player2/MoveHorizontal[/XInputControllerWindows/leftStick/left,/XInputControllerWindows/leftStick/right]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 73cd9bdf-367c-4640-b264-e75203f5082a
-    m_ActionName: Player2/MoveVertical[/XInputControllerWindows/leftStick/down,/XInputControllerWindows/leftStick/up]
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 442839888}
@@ -1076,7 +1064,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 600386325}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1215,10 +1203,6 @@ MonoBehaviour:
     m_ActionName: Player2/MoveHorizontal[/XInputControllerWindows/leftStick/left,/XInputControllerWindows/leftStick/right]
   - m_PersistentCalls:
       m_Calls: []
-    m_ActionId: 73cd9bdf-367c-4640-b264-e75203f5082a
-    m_ActionName: Player2/MoveVertical[/XInputControllerWindows/leftStick/down,/XInputControllerWindows/leftStick/up]
-  - m_PersistentCalls:
-      m_Calls: []
     m_ActionId: 5a79480f-5e66-46a5-bbd3-ac1eb177974c
     m_ActionName: Player2/Brake[/XInputControllerWindows/leftTrigger]
   - m_PersistentCalls:
@@ -1289,6 +1273,18 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 0700a01a-ea8d-46f1-b3f9-79f9790a1d7d
     m_ActionName: AllController/Back[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4c54506d-c8fc-451d-8fe2-b3f23fa479df
+    m_ActionName: Player1/CameraReset
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 74cf3348-f0cb-47a7-b6e4-649a4df162b4
+    m_ActionName: Player2/Lotation[/XInputControllerWindows/rightStick/up,/XInputControllerWindows/rightStick/down,/XInputControllerWindows/rightStick/left,/XInputControllerWindows/rightStick/right]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a64082b8-8096-4f74-834e-9c3e3d8a1e2c
+    m_ActionName: Player2/CameraReset[/XInputControllerWindows/rightStickPress]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Player1
   m_DefaultActionMap: Player1
@@ -1433,7 +1429,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 746561350}
   m_LocalRotation: {x: 0.13052616, y: 0, z: 0, w: 0.9914449}
-  m_LocalPosition: {x: -30, y: 0.94, z: -2.05}
+  m_LocalPosition: {x: -30, y: 0.229, z: -0.464}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1471,7 +1467,7 @@ Camera:
     y: 0
     width: 0.5
     height: 0.5
-  near clip plane: 0.3
+  near clip plane: 0.1
   far clip plane: 10
   field of view: 60
   orthographic: 0
@@ -1578,7 +1574,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 810528913}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.018900003, z: 0.039850265}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1643,7 +1639,7 @@ Transform:
   m_GameObject: {fileID: 815110484}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 354609024}
@@ -1749,7 +1745,7 @@ Transform:
   m_GameObject: {fileID: 933211236}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 784112823}
@@ -1949,7 +1945,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1064647474}
   m_LocalRotation: {x: 0.13052616, y: 0, z: 0, w: 0.9914449}
-  m_LocalPosition: {x: 0, y: 0.94, z: -2.05}
+  m_LocalPosition: {x: 0, y: 0.229, z: -0.464}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1987,7 +1983,7 @@ Camera:
     y: 0.5
     width: 0.5
     height: 0.5
-  near clip plane: 0.3
+  near clip plane: 0.1
   far clip plane: 10
   field of view: 60
   orthographic: 0
@@ -1995,7 +1991,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 33
+    m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -2066,7 +2062,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1215384166}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2129,10 +2125,6 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 8b619d9b-5bc6-4ed9-9b95-3d43f6ede802
     m_ActionName: Player2/MoveHorizontal
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 73cd9bdf-367c-4640-b264-e75203f5082a
-    m_ActionName: Player2/MoveVertical
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 5a79480f-5e66-46a5-bbd3-ac1eb177974c
@@ -2265,6 +2257,18 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 0700a01a-ea8d-46f1-b3f9-79f9790a1d7d
     m_ActionName: AllController/Back[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4c54506d-c8fc-451d-8fe2-b3f23fa479df
+    m_ActionName: Player1/CameraReset
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 74cf3348-f0cb-47a7-b6e4-649a4df162b4
+    m_ActionName: Player2/Lotation[/XInputControllerWindows/rightStick/up,/XInputControllerWindows/rightStick/down,/XInputControllerWindows/rightStick/left,/XInputControllerWindows/rightStick/right]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a64082b8-8096-4f74-834e-9c3e3d8a1e2c
+    m_ActionName: Player2/CameraReset[/XInputControllerWindows/rightStickPress]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Player4
   m_DefaultActionMap: Player4
@@ -2425,7 +2429,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1563660353}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2783,7 +2787,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1737048084}
   m_LocalRotation: {x: 0.13052616, y: 0, z: 0, w: 0.9914449}
-  m_LocalPosition: {x: -10, y: 0.94, z: -2.05}
+  m_LocalPosition: {x: -10, y: 0.229, z: -0.464}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2821,7 +2825,7 @@ Camera:
     y: 0.5
     width: 0.5
     height: 0.5
-  near clip plane: 0.3
+  near clip plane: 0.1
   far clip plane: 10
   field of view: 60
   orthographic: 0
@@ -2931,7 +2935,7 @@ Transform:
   m_GameObject: {fileID: 1842301436}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 60350614}
@@ -3037,7 +3041,7 @@ Transform:
   m_GameObject: {fileID: 1854799892}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2052905537}
@@ -3085,7 +3089,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ace2b62db71fcf94e91e68a6af09ea97, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -32,7 +32,7 @@ public class InsectSelectController : MonoBehaviour
         //dic.Clear();
 
         Application.targetFrameRate = 60;
-        csvFile = Resources.Load("CSVs/InsectSelectTest2") as TextAsset;
+        csvFile = Resources.Load("CSVs/InsectSelectTest3") as TextAsset;
         StringReader reader = new StringReader(csvFile.text);
         while (reader.Peek() != -1)
         {
@@ -63,12 +63,7 @@ public class InsectSelectController : MonoBehaviour
             }
             SceneManager.LoadScene(3);
 
-            Invoke("DestroyController", 1);
+            //Invoke("DestroyController", 3);
         }
-    }
-
-    void DestroyController()
-    {
-        Destroy(gameObject);
     }
 }

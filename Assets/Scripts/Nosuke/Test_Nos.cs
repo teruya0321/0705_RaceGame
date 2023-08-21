@@ -1,44 +1,41 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Test_Nos : MonoBehaviour
 {
     public float maxPower;
+    
     public float angle;
     public float breake;
     public WheelCollider wcFL,wcFR,wcBL,wcBR;
-    enum Drive {FRONT,BACK}
+    PlayerInput input;
 
-    Drive drive;
+    bool ready;
     private void Start()
     {
-        drive = Drive.FRONT;
+        input = GetComponent<PlayerInput>();
     }
     void DRIVE()
     {
-        float power = maxPower * Input.GetAxis("Vertical");
-        float steering = angle * Input.GetAxis("Horizontal");
+        float power = maxPower * input.currentActionMap.FindAction("Accel").ReadValue<float>();
+        float steering = angle * input.currentActionMap.FindAction("MoveHorizontal").ReadValue<Vector2>().x;
 
         wcFL.steerAngle = steering;
         wcFR.steerAngle = steering;
+        wcBL.steerAngle = steering * -1;
+        wcBR.steerAngle = steering * -1;
 
-        if(drive == Drive.BACK)
-        {
-            wcBR.motorTorque = power;
-            wcBL.motorTorque = power;
-        }
-        else
-        {
-            wcFR.motorTorque = power;
-            wcFL.motorTorque = power;
-        }
-
+        wcFR.motorTorque = power;
+        wcFL.motorTorque = power;
+        wcBR.motorTorque = power;
+        wcBL.motorTorque = power;
     }
 
     void BREAKE()
     {
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (input.currentActionMap.FindAction("Breake").IsPressed())
         {
             wcFL.brakeTorque = breake;
             wcFR.brakeTorque = breake;
@@ -58,5 +55,15 @@ public class Test_Nos : MonoBehaviour
     {
         DRIVE();
         BREAKE();
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Goal")
+        {
+            ready = true;
+
+            collision.gameObject.GetComponent<GoalScript>().Goal(gameObject);
+        }
     }
 }

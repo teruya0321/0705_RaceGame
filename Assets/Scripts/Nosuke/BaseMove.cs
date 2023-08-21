@@ -7,7 +7,7 @@ public class BaseMove : MonoBehaviour
     Vector3 firstPos; // ‰ŠúˆÊ’u
 
     float moveSpeed = 2; // “y‘ä‚Ì“®‚­‘¬‚³
-    float amplitude = 0.1f; // “y‘ä‚Ì“®‚­•‚Ì‘å‚«‚³
+    float amplitude = 0.05f; // “y‘ä‚Ì“®‚­•‚Ì‘å‚«‚³
     // ã“ñ‚Â‚Ípublic‚É‚µ‚Ä‚à‚¢‚¢‚©‚à
 
     float rotation; // ‰ñ“]‚Åg‚¤’l

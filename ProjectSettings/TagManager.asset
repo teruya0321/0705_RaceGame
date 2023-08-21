@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Player1
+  - Player2
+  - Player3
+  - Player4
+  - Ground
+  - Start
+  - Goal
+  - Wheel
+  - Reset
   layers:
   - Default
   - TransparentFX
@@ -11,13 +20,13 @@ TagManager:
   - 
   - Water
   - UI
+  - Ground
+  - BodyMiddle
+  - BodyOther
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Wheel
+  - Reset
+  - Balancer
   - 
   - 
   - 

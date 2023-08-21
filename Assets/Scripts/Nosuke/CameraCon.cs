@@ -4,24 +4,23 @@ using UnityEngine;
 
 public class CameraCon : MonoBehaviour
 {
-    public Vector3 cameraPos;
-    public float cameraLotationX;
-    Vector3 cameraLot;
+    List<GameObject> cameraList = new List<GameObject>();
     // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        cameraLot.x = cameraLotationX;
-
-        GameObject parent = GameObject.FindWithTag(gameObject.tag);
-        transform.position = cameraPos + parent.transform.position;
-
-        transform.SetParent(parent.transform);
-
-        transform.localEulerAngles = cameraLot + Vector3.zero;
+        foreach(Transform cameras in transform)
+        {
+            cameraList.Add(cameras.gameObject);
+        }
     }
 
-    void CameraPosReset()
+    private void Start()
     {
-        
+        for(int i = 1; i <= 4;  i++)
+        {
+            cameraList[i - 1].transform.SetParent(InsectSelectController.instance.dic["Player" + i].transform);
+
+            cameraList[i - 1].transform.position = InsectSelectController.instance.dic["Player" + i].transform.position;
+        }
     }
 }

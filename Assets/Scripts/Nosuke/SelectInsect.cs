@@ -47,6 +47,11 @@ public class SelectInsect : MonoBehaviour
         for (int i = 1; i <= 3; i++)
         {
             bodyList[i - 1] = Instantiate((GameObject)Resources.Load("TestPrefab/" + selectCon.insectSelectCSVDatas[insectNumber][i]), conectPoint[i - 1]);
+            if(i == 2)
+            {
+                middleConect = bodyList[i - 1].AddComponent<ReloadMiddleConectPoint>();
+                middleConect.ReloadMiddle(conectPoint[0].gameObject, conectPoint[2].gameObject);
+            }
             // 最初のオブジェクトを設定に入れる
         } 
     }

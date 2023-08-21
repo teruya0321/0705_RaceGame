@@ -3,18 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using UnityEngine.Animations;
+
 public class ControllerTest : MonoBehaviour
 {
+
     [SerializeField] PlayerInput input; 
     InputAction action;
 
     private void Awake()
     {
         input = GetComponent<PlayerInput>();
-        input.defaultActionMap = gameObject.name;
+        //sinput.defaultActionMap = gameObject.name;
     }
 
     private void Update()
+    {
+        if(input.currentActionMap.FindAction("MoveHorizontal").ReadValue<Vector2>() != Vector2.zero)
+        {
+            Debug.Log(input.currentActionMap.FindAction("MoveHorizontal").ReadValue<Vector2>());
+        }
+
+        if(input.currentActionMap.FindAction("Lotation").ReadValue<float>() != 0)
+        {
+            Debug.Log(input.currentActionMap.FindAction("Lotation").ReadValue<float>());
+        }
+    }
+
+    /*private void Update()
     {
         if (input.currentActionMap.FindAction("MoveHorizontal").ReadValue<float>() >= 0.8f || input.currentActionMap.FindAction("MoveHorizontal").ReadValue<float>() <= -0.8f)
             Debug.Log(gameObject.name + ":横:" + input.currentActionMap.FindAction("MoveHorizontal").ReadValue<float>());
@@ -27,8 +43,13 @@ public class ControllerTest : MonoBehaviour
         // 小さい値からとりたいときは.ReadValue<float>() >= 0.8fという部分を.isPressed()に変更してください。
     }
 
-
+    
     // Event型で取得するためpublicに。PlayerInputコンポーネントと合わせて使う。わからんかったら聞いてくれ
+    public void Horizontal(InputAction.CallbackContext context)
+    {
+        Vector2 vector2 = context.ReadValue<Vector2>();
+        Debug.Log(gameObject.name + "は横方向にスティックを" + vector2 + "ぐらい倒してるぜ！");
+    }
     public void Jump(InputAction.CallbackContext context)
     {
         if (!context.performed) return;
@@ -50,5 +71,5 @@ public class ControllerTest : MonoBehaviour
     {
         if (!context.performed) return;
         Debug.Log(gameObject.name + "がブレーキをかけるぜ！");
-    }
+    }*/
 }
