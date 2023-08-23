@@ -6,59 +6,95 @@ using UnityEngine.InputSystem;
 
 public class InsectMove : MonoBehaviour
 {
-    PlayerInput input;
-    //InputAction action;
-
-    Rigidbody myRb;
-    public float speed = 500f;
-
-    bool isGround = false;
     public Transform cameraParent;
 
-    bool ready = true;
+   // bool ready = true;
+
+    public SelectInsect selectInsect;
+
+    Animator[] animators = new Animator[3];
+    ParticleSystem particle;
+
+    public Test_Nos wheelscript;
+
+    PlayerInput player;
+
+    public bool goal = false;
+
+    private void OnEnable()
+    {
+        selectInsect = GetComponent<SelectInsect>();
+
+        player = GetComponent<PlayerInput>();
+
+        cameraParent = transform.GetChild(3);
+
+        particle = GetComponent<ParticleSystem>();
+    }
     void Start()
     {
-        input = GetComponent<PlayerInput>();
-        myRb =  gameObject.GetComponent<Rigidbody>();
+        for(int i = 1; i <= 3; i++)
+        {
+            selectInsect.bodyList[i - 1].gameObject.tag = "Player";
+            if(i == 2)
+            {
+                animators[i - 1] = selectInsect.bodyList[i - 1].gameObject.GetComponent<Animator>();
+            }
+            else
+            {
+                animators[i - 1] = selectInsect.bodyList[i - 1].transform.GetChild(0).gameObject.GetComponent<Animator>();
+            }
+        }
+        wheelscript = selectInsect.bodyList[1].GetComponent<Test_Nos>();
+
+        wheelscript.enabled = true;
+
+        cameraParent.SetParent(null);
+
+        transform.SetParent(null);
     }
 
-    void Update()
+    private void Update()
     {
-        if(!ready) return;
+        if (goal) return;
 
-        Vector3 rbAddTorque = new Vector3(0, input.currentActionMap.FindAction("MoveHorizontal").ReadValue<Vector2>().x * speed * 10, 0);
+        for(int i = 0; i < 3; i++)
+        {
+            animators[0].SetBool("Walk", wheelscript.walking);
+            animators[1].SetBool("Walk", wheelscript.walking);
+            animators[2].SetBool("Walk", wheelscript.walking);
+        }
 
-        myRb.AddTorque(rbAddTorque);
+        if(player.currentActionMap.FindAction("Accel").ReadValue<float>() != 0)
+        {
+            particle.Play();
+        }
+        else
+        {
+            particle.Stop();
+        }
+    }
 
-        Vector3 playerLot = transform.localEulerAngles;
-
-        float LotX = playerLot.x;
-        if (LotX > 180) LotX -= 360;
-        float x = Mathf.Clamp(LotX, -30, 45);
-
-        float LotZ = playerLot.z;
-        if(LotZ > 180) LotZ -= 360;
-        float z = Mathf.Clamp(LotZ, -30, 30);
-
-        playerLot.x = x;
-        playerLot.z = z;
-        transform.localEulerAngles = playerLot;
-
-       //Mathf.Clamp(transform.localEulerAngles.x, -45, 45);
-       // Mathf.Clamp(transform.localEulerAngles.z, -45, 45);
-
+    private void LateUpdate()
+    {
         cameraParent.transform.position = transform.position;
 
-        //--------------------------------------------------------------------------------------------------------------------
+        if (goal) return;
 
-        Vector3 cameraLot = new Vector3(input.currentActionMap.FindAction("Lotation").ReadValue<Vector2>().y * -1, input.currentActionMap.FindAction("Lotation").ReadValue<Vector2>().x, 0);
+        transform.localEulerAngles += new Vector3(0, player.currentActionMap.FindAction("MoveHorizontal").ReadValue<float>() * 10, 0);
 
-        cameraParent.localEulerAngles += cameraLot;
-        if (isGround)
+        Vector3 cameraLot = new Vector3(0, player.currentActionMap.FindAction("Lotation").ReadValue<float>(), 0);
+
+        cameraParent.transform.localEulerAngles += cameraLot;
+
+        if (player.currentActionMap.FindAction("LotationReset").IsPressed())
         {
-            myRb.AddForce(input.currentActionMap.FindAction("Accel").ReadValue<float>() *  speed * transform.forward);
+            RotationReset();
+        }
 
-            myRb.AddForce(input.currentActionMap.FindAction("Brake").ReadValue<float>() * -1 * speed * transform.forward);
+        if(player.currentActionMap.FindAction("CameraReset").IsPressed())
+        {
+            CameraResetButton();
         }
     }
 
@@ -66,35 +102,20 @@ public class InsectMove : MonoBehaviour
     {
         if(collision.gameObject.tag == "Ground")
         {
-            isGround = true;
-        }
-
-        if(collision.gameObject.tag == "Goal")
-        {
-            ready = false;
+            GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
         }
     }
 
-    private void OnCollisionExit(Collision collision)
+    void CameraResetButton()
     {
-        if (collision.gameObject.tag == "Ground")
-        {
-            isGround = false;
-        }
+        cameraParent.transform.localEulerAngles = Vector3.zero;
     }
 
-    public void JumpButton(InputAction.CallbackContext context)
+    void RotationReset()
     {
-        if (!context.performed) return;
-        if (!isGround) return;
+        transform.localEulerAngles = Vector3.zero;
+        //GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
 
-        myRb.AddForce(transform.up * 30000);  
-    }
-
-    public void CameraResetButton(InputAction.CallbackContext context)
-    {
-        if (!context.performed) return;
-
-        cameraParent.transform.localEulerAngles = transform.localEulerAngles;
+        //transform.position += Vector3.forward;
     }
 }

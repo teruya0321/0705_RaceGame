@@ -56,13 +56,31 @@
                     "id": "52cc211e-62f5-497d-ab98-d2cef96fbf98",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Press",
+                    "interactions": "",
                     "initialStateCheck": false
                 },
                 {
                     "name": "CameraReset",
                     "type": "Button",
                     "id": "4c54506d-c8fc-451d-8fe2-b3f23fa479df",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LotationReset",
+                    "type": "Button",
+                    "id": "586b5493-01e5-400e-94c7-213e6b13fde5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Back",
+                    "type": "Button",
+                    "id": "843a792d-7cd9-472a-80d0-24d27bb0ae20",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -107,9 +125,9 @@
                     "name": "",
                     "id": "d601edb6-c348-4e7f-84f4-66a76c7ce7b5",
                     "path": "<HID::QIXIONG Wire PS4 Controller>/button2",
-                    "interactions": "",
+                    "interactions": "Press(behavior=2)",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Player1",
                     "action": "Attack",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -117,7 +135,7 @@
                 {
                     "name": "",
                     "id": "187fe428-16a8-4744-8bda-047d1bf0bcbd",
-                    "path": "<Joystick>/stick/up",
+                    "path": "<HID::QIXIONG Wire PS4 Controller>/button12",
                     "interactions": "",
                     "processors": "",
                     "groups": "Player2;Player1",
@@ -126,92 +144,48 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "2",
-                    "id": "1ffee38f-f342-4d16-a5f7-fb430281f80e",
-                    "path": "2DVector",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MoveHorizontal",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "up",
-                    "id": "0ef966dc-c176-4340-b571-3311c74628b9",
-                    "path": "<HID::QIXIONG Wire PS4 Controller>/stick/up",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MoveHorizontal",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "1b374bd8-a079-4341-b3d7-268ac3ce3ca2",
-                    "path": "<HID::QIXIONG Wire PS4 Controller>/stick/down",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MoveHorizontal",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "left",
-                    "id": "3172c370-5118-4c9e-ae3d-72d6b4cefabb",
-                    "path": "<HID::QIXIONG Wire PS4 Controller>/stick/left",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MoveHorizontal",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "4821c77f-fc65-481d-ae14-3e5955fb2f36",
-                    "path": "<HID::QIXIONG Wire PS4 Controller>/stick/right",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MoveHorizontal",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "1D Axis",
-                    "id": "86c0c7ce-273e-4bf5-8572-aedd43f0ea21",
-                    "path": "1DAxis(whichSideWins=1)",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Lotation",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "positive",
-                    "id": "d4f7b4d0-7a68-49ca-ab7b-a8005fdb7d2e",
-                    "path": "<HID::QIXIONG Wire PS4 Controller>/rz",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Lotation",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "negative",
-                    "id": "13efa6d6-ab97-4458-b130-0c73451dd6ac",
+                    "name": "",
+                    "id": "03db92be-bfe1-4322-aff0-d845ac59aac0",
                     "path": "<HID::QIXIONG Wire PS4 Controller>/z",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Lotation",
                     "isComposite": false,
-                    "isPartOfComposite": true
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e5cce754-9bbb-48ba-b999-8dca34fdd809",
+                    "path": "<HID::QIXIONG Wire PS4 Controller>/stick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveHorizontal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fc387524-2667-415b-ab1f-132c31da1dc9",
+                    "path": "<HID::QIXIONG Wire PS4 Controller>/hat/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LotationReset",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e8d3087d-f9c3-4550-a880-2d965f96908d",
+                    "path": "<HID::QIXIONG Wire PS4 Controller>/button6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Back",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -270,8 +244,8 @@
                     "id": "b4f9f1e4-283e-460b-830f-7831ffbf5c3b",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Press",
-                    "initialStateCheck": false
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "CameraReset",
@@ -281,119 +255,27 @@
                     "processors": "",
                     "interactions": "Press",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "LotationReset",
+                    "type": "Button",
+                    "id": "bb86796c-b1c8-477b-9ac8-f9eaa9005ab3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Back",
+                    "type": "Button",
+                    "id": "00e41526-9e55-41c0-845e-95de8fdaf138",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
-                {
-                    "name": "Controler",
-                    "id": "4647e9df-d604-4d7c-aa3b-86aede2e24e5",
-                    "path": "2DVector",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MoveHorizontal",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "Up",
-                    "id": "d9ea313d-0a68-49b2-93f8-5091ebd1a63e",
-                    "path": "<XInputController>/leftStick/up",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MoveHorizontal",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "Down",
-                    "id": "476b7a77-9a74-4670-a60f-a438a9621277",
-                    "path": "<XInputController>/leftStick/down",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MoveHorizontal",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "Left",
-                    "id": "3e3bae57-fca3-41cd-8410-9f0a268a4a8f",
-                    "path": "<XInputController>/leftStick/left",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MoveHorizontal",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "Right",
-                    "id": "79aefd93-b470-494f-a11c-2b7bc3a21bbd",
-                    "path": "<XInputController>/leftStick/right",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MoveHorizontal",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "2",
-                    "id": "b0739741-e22d-4800-8269-2ffd5c3bc68b",
-                    "path": "2DVector",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MoveHorizontal",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "up",
-                    "id": "3323ca05-f601-4ab2-be8a-c4835553bbc2",
-                    "path": "<HID::SZ-MYPOWER Wireless Controller>/stick/up",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MoveHorizontal",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "71cc31e0-7206-4718-8f22-8856d9f60e73",
-                    "path": "<HID::SZ-MYPOWER Wireless Controller>/stick/down",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MoveHorizontal",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "left",
-                    "id": "8db433c1-5d07-42a1-a86b-3ef31cfc0623",
-                    "path": "<HID::SZ-MYPOWER Wireless Controller>/stick/left",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MoveHorizontal",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "edcdf77b-362c-4494-aa2a-418e120879be",
-                    "path": "<HID::SZ-MYPOWER Wireless Controller>/stick/right",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MoveHorizontal",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
                 {
                     "name": "",
                     "id": "6dee05f5-b605-4b1c-bc08-fbaf65ee3896",
@@ -418,22 +300,11 @@
                 },
                 {
                     "name": "",
-                    "id": "993eb6e7-e8fc-4eb4-8f01-be5b81289f64",
-                    "path": "<HID::SZ-MYPOWER Wireless Controller>/button8",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Accel",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "888cd410-a8c0-4550-9360-0a742c8ebbc8",
                     "path": "<XInputController>/buttonEast",
-                    "interactions": "",
+                    "interactions": "Press(behavior=2)",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Player2",
                     "action": "Attack",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -450,59 +321,26 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "Controller",
-                    "id": "0d3df7ee-52cf-486c-8576-c52c2413fa03",
-                    "path": "2DVector",
+                    "name": "",
+                    "id": "e60140f0-8dc8-4842-803d-a3766032e33d",
+                    "path": "<XInputController>/rightStick/x",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Lotation",
-                    "isComposite": true,
+                    "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "up",
-                    "id": "02993ad8-8b55-49ac-9ff5-c6dc0fd80111",
-                    "path": "<XInputController>/rightStick/up",
+                    "name": "",
+                    "id": "5bf0f32d-4f88-4863-91a7-3e50fcb40722",
+                    "path": "<XInputController>/leftStick/x",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Lotation",
+                    "action": "MoveHorizontal",
                     "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "2eb4377b-20c3-418e-be5b-8964ad34cec6",
-                    "path": "<XInputController>/rightStick/down",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Lotation",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "left",
-                    "id": "09e3d2e5-6a7e-4d1b-bcda-30bd63fd5265",
-                    "path": "<XInputController>/rightStick/left",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Lotation",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "6a92d167-2a63-41d2-8a2d-65cf8e01f277",
-                    "path": "<XInputController>/rightStick/right",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Lotation",
-                    "isComposite": false,
-                    "isPartOfComposite": true
+                    "isPartOfComposite": false
                 },
                 {
                     "name": "",
@@ -512,6 +350,28 @@
                     "processors": "",
                     "groups": "Player2",
                     "action": "CameraReset",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "983de199-3ab3-4d88-9ea4-c8e1d7d95210",
+                    "path": "<XInputController>/dpad/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LotationReset",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "60feea84-8371-45eb-8333-d4078acf3226",
+                    "path": "<XInputController>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Back",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -531,7 +391,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "MoveVertical",
+                    "name": "Lotation",
                     "type": "Value",
                     "id": "b797384e-f9b1-4690-8a7c-d5786e42caa5",
                     "expectedControlType": "Button",
@@ -572,87 +432,48 @@
                     "id": "18db91d0-be73-449f-b984-eeaaba7be02c",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Press",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "CameraReset",
+                    "type": "Button",
+                    "id": "c59d4f1a-c509-4c99-b563-fa3cd486d866",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LotationReset",
+                    "type": "Button",
+                    "id": "cf1e11ca-2fe9-4d0b-8a7b-7510253dc784",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Back",
+                    "type": "Button",
+                    "id": "518a32b0-1835-479a-b71c-52820d2716ae",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
                     "initialStateCheck": false
                 }
             ],
             "bindings": [
                 {
-                    "name": "Controler",
-                    "id": "c993726c-3c9b-4b5e-9798-bba27b69b8ae",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MoveHorizontal",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "4a6ac2c6-b3ea-4814-8efe-bba532c88d5d",
-                    "path": "<DualShockGamepad>/leftStick/left",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Player3",
-                    "action": "MoveHorizontal",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "6e1010bf-ce98-4485-8509-f9e51524b7bb",
-                    "path": "<DualShockGamepad>/leftStick/right",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Player3",
-                    "action": "MoveHorizontal",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
                     "name": "",
                     "id": "0053d2e7-944e-4b33-80aa-1629b79adf7d",
                     "path": "<DualShockGamepad>/buttonSouth",
-                    "interactions": "Press",
+                    "interactions": "Press(behavior=2)",
                     "processors": "",
                     "groups": "Player3",
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "Controller",
-                    "id": "29f73811-5ed2-4f24-ab65-cd8c37aa5dd1",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MoveVertical",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "67043857-af99-4591-8091-a77ca4b51351",
-                    "path": "<DualShockGamepad>/leftStick/down",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Player3",
-                    "action": "MoveVertical",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "84dd6bcc-e9a3-4a01-ba9b-3d6bbf250e37",
-                    "path": "<DualShockGamepad>/leftStick/up",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Player3",
-                    "action": "MoveVertical",
-                    "isComposite": false,
-                    "isPartOfComposite": true
                 },
                 {
                     "name": "",
@@ -686,6 +507,61 @@
                     "action": "Brake",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1a128c3d-d655-4043-b2c9-55a1b68133ae",
+                    "path": "<DualShockGamepad>/rightStick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Lotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ba56e1cf-eae6-4fa7-b7d9-9db731e43b4b",
+                    "path": "<DualShockGamepad>/leftStick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveHorizontal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "051e6dc8-720a-406b-94eb-055c9170616c",
+                    "path": "<Gamepad>/rightStickPress",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player3",
+                    "action": "CameraReset",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d2ad9219-576c-438a-8d5e-f67e4590b62c",
+                    "path": "<DualShockGamepad>/dpad/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LotationReset",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f3479706-2dcf-417b-ae29-1d5a1042ea2f",
+                    "path": "<DualShockGamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Back",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -703,7 +579,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "MoveVertical",
+                    "name": "Lotation",
                     "type": "Value",
                     "id": "f68cba55-d920-4f9a-9738-5c9eb44b7ff7",
                     "expectedControlType": "Button",
@@ -744,77 +620,38 @@
                     "id": "5c8fb3ff-ab50-46de-8418-37cdd67826bd",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Press",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "CameraReset",
+                    "type": "Button",
+                    "id": "5cc558ab-25bb-484d-a2e3-7a4bb0ade73c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LotationReset",
+                    "type": "Button",
+                    "id": "630a61b8-1646-401e-a361-4ec03c8e9ae2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Back",
+                    "type": "Button",
+                    "id": "4a638adf-4d2b-4274-bb75-85372beb04a5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
                     "initialStateCheck": false
                 }
             ],
             "bindings": [
-                {
-                    "name": "Controler",
-                    "id": "dfd420a8-f0b2-401f-8f01-2edd870c1edb",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MoveHorizontal",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "13d69171-ddc4-4060-9e2b-1a353e65abfd",
-                    "path": "<HID::HORI CO.,LTD. HORIPAD 4 >/stick/left",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Player4",
-                    "action": "MoveHorizontal",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "d990fa40-c75c-43f8-b691-30fb035adaf0",
-                    "path": "<HID::HORI CO.,LTD. HORIPAD 4 >/stick/right",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Player4",
-                    "action": "MoveHorizontal",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "Controller",
-                    "id": "aa513eba-adbd-410c-877b-d0a1e023e7a6",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MoveVertical",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "c0e8292e-e46f-460b-852e-22fac4e78454",
-                    "path": "<HID::HORI CO.,LTD. HORIPAD 4 >/stick/down",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Player4",
-                    "action": "MoveVertical",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "b9ff3ad9-3e11-4cfc-b4e4-8d8d772a7c61",
-                    "path": "<HID::HORI CO.,LTD. HORIPAD 4 >/stick/up",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Player4",
-                    "action": "MoveVertical",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
                 {
                     "name": "",
                     "id": "ad00e653-5be3-416d-85fa-be98ed6c05e2",
@@ -841,7 +678,7 @@
                     "name": "",
                     "id": "cc8865aa-8e2a-471c-9864-8dc1096d6aa6",
                     "path": "<HID::HORI CO.,LTD. HORIPAD 4 >/button2",
-                    "interactions": "Press",
+                    "interactions": "Press(behavior=2)",
                     "processors": "",
                     "groups": "Player4",
                     "action": "Jump",
@@ -856,6 +693,61 @@
                     "processors": "",
                     "groups": "Player4",
                     "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d8c6e6e5-a05c-4a07-a2ce-dfa50a64f28d",
+                    "path": "<HID::HORI CO.,LTD. HORIPAD 4 >/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Lotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c8b8c018-4967-4242-9479-874835a06664",
+                    "path": "<HID::HORI CO.,LTD. HORIPAD 4 >/stick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveHorizontal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cf83f055-b472-406a-969e-18a5f1de4fd0",
+                    "path": "<HID::HORI CO.,LTD. HORIPAD 4 >/button12",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player4",
+                    "action": "CameraReset",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c2455b9e-14f1-4325-af33-02fb7849e730",
+                    "path": "<HID::HORI CO.,LTD. HORIPAD 4 >/hat/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player4",
+                    "action": "LotationReset",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b87380e4-bc78-45bd-9819-33c6b05f0880",
+                    "path": "<HID::HORI CO.,LTD. HORIPAD 4 >/button6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player4",
+                    "action": "Back",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -1036,11 +928,6 @@
             "name": "Player4",
             "bindingGroup": "Player4",
             "devices": [
-                {
-                    "devicePath": "<SwitchProControllerHID>",
-                    "isOptional": false,
-                    "isOR": false
-                },
                 {
                     "devicePath": "<HID::HORI CO.,LTD. HORIPAD 4 >",
                     "isOptional": false,

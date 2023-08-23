@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.IO;
+using System.Threading;
 
 public class SelectInsect : MonoBehaviour
 {
+    PlayerInput input;
+
     InsectSelectController selectCon;
 
     // それぞれの部位を置く空オブジェクトの場所
@@ -14,7 +17,7 @@ public class SelectInsect : MonoBehaviour
 
     public List<Transform> conectPoint;
 
-    int bodyNumber = 1;
+    public int bodyNumber = 1;
     // 現在選択している部位
     int insectNumber = 1;
     // 現在選択している虫の種類
@@ -31,9 +34,13 @@ public class SelectInsect : MonoBehaviour
 
     ReloadMiddleConectPoint middleConect;
 
+    float cooltimer;
+
+    public bool cooltime;
+
     void Awake()
     {
-        //input = GetComponent<PlayerInput>();
+        input = GetComponent<PlayerInput>();
         selectCon = GameObject.FindWithTag("GameController").GetComponent<InsectSelectController>();
         // InsectSelectcontrollerをタグで検索して変数にぶち込む
 
@@ -46,7 +53,7 @@ public class SelectInsect : MonoBehaviour
 
         for (int i = 1; i <= 3; i++)
         {
-            bodyList[i - 1] = Instantiate((GameObject)Resources.Load("TestPrefab/" + selectCon.insectSelectCSVDatas[insectNumber][i]), conectPoint[i - 1]);
+            bodyList[i - 1] = Instantiate((GameObject)Resources.Load("LoadPrefabs/" + selectCon.insectSelectCSVDatas[insectNumber][i]), conectPoint[i - 1]);
             if(i == 2)
             {
                 middleConect = bodyList[i - 1].AddComponent<ReloadMiddleConectPoint>();
@@ -62,6 +69,18 @@ public class SelectInsect : MonoBehaviour
             DebugInsectDecide();
             // デバッグ用のキー入力
         }
+
+        if (cooltime)
+        {
+            cooltimer += Time.deltaTime;
+
+            if (cooltimer >= 0.5f)
+            {
+                cooltime = false;
+                cooltimer = 0;
+            }
+        }
+
         if (ready) // 虫を選択し終わったら
         {
             if (InsectSelectController.instance.dic[gameObject.name] == null) // 一回だけ受け渡すための設定
@@ -94,10 +113,10 @@ public class SelectInsect : MonoBehaviour
 
         insectNumber++;
         // 虫の種類を変更
-        if (insectNumber > 4) insectNumber = 1;
+        if (insectNumber > 9) insectNumber = 1;
         // 虫の種類の選択できる範囲を超えたら、初期値に戻す
         slotTimer = 0;
-        bodyList[bodyNumber - 1] = Instantiate((GameObject)Resources.Load("TestPrefab/" + selectCon.insectSelectCSVDatas[insectNumber][bodyNumber]),
+        bodyList[bodyNumber - 1] = Instantiate((GameObject)Resources.Load("LoadPrefabs/" + selectCon.insectSelectCSVDatas[insectNumber][bodyNumber]),
                                    conectPoint[bodyNumber - 1]);
         // CSVから対応したオブジェクトを生成する
 
@@ -109,12 +128,13 @@ public class SelectInsect : MonoBehaviour
         }
     }
     // コントローラー用の関数
-    public void InsectDecide(InputAction.CallbackContext context)
+    public void InsectDecide(InputAction.CallbackContext context) 
     {
-        if (ready) return;
+        if (cooltime) return;
         if (!context.performed) return;
+        if (ready) return;
 
-        bodyNumber++;
+        bodyNumber += 1;
         // 次のパーツに進める
         insectNumber = 1;
         // 虫のナンバーを初期化する
@@ -122,6 +142,8 @@ public class SelectInsect : MonoBehaviour
         // タイマーをリセット
         audioSource.PlayOneShot(selectSE);
         // 効果音を鳴らす
+
+        cooltime = true;
     }
 
     // PCでデバッグ用の関数 あんま使わない方がいいかも

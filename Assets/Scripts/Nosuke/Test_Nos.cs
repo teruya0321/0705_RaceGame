@@ -10,32 +10,49 @@ public class Test_Nos : MonoBehaviour
     public float angle;
     public float breake;
     public WheelCollider wcFL,wcFR,wcBL,wcBR;
-    PlayerInput input;
+    public PlayerInput input;
 
-    bool ready;
+    public GameObject player;
+
+    public Rigidbody middleRb;
+
+    public bool walking = false;
+
+    public bool goal = false;
+    private void OnEnable()
+    {
+        player = transform.parent.parent.gameObject;
+
+        middleRb = GetComponent<Rigidbody>();
+
+        gameObject.AddComponent<FixedJoint>().connectedBody = player.GetComponent<Rigidbody>();
+    }
     private void Start()
     {
-        input = GetComponent<PlayerInput>();
+        input = player.GetComponent<PlayerInput>();
+
+        
     }
-    void DRIVE()
+    public void DRIVE()
     {
         float power = maxPower * input.currentActionMap.FindAction("Accel").ReadValue<float>();
-        float steering = angle * input.currentActionMap.FindAction("MoveHorizontal").ReadValue<Vector2>().x;
+        float back = maxPower * input.currentActionMap.FindAction("Back").ReadValue<float>() * -1;
+        float steering = angle * input.currentActionMap.FindAction("MoveHorizontal").ReadValue<float>();
 
         wcFL.steerAngle = steering;
         wcFR.steerAngle = steering;
-        wcBL.steerAngle = steering * -1;
-        wcBR.steerAngle = steering * -1;
+        //wcBL.steerAngle = steering * -1;
+        //wcBR.steerAngle = steering * -1;
 
-        wcFR.motorTorque = power;
-        wcFL.motorTorque = power;
-        wcBR.motorTorque = power;
-        wcBL.motorTorque = power;
+        wcFR.motorTorque = power + back;
+        wcFL.motorTorque = power + back;
+        wcBR.motorTorque = power + back;
+        wcBL.motorTorque = power + back;
     }
 
-    void BREAKE()
+    public void BREAKE()
     {
-        if (input.currentActionMap.FindAction("Breake").IsPressed())
+        if (input.currentActionMap.FindAction("Brake").IsPressed())
         {
             wcFL.brakeTorque = breake;
             wcFR.brakeTorque = breake;
@@ -53,17 +70,31 @@ public class Test_Nos : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (goal) return;
+
         DRIVE();
         BREAKE();
     }
 
+    private void Update()
+    {
+        if (goal) return;
+
+        if(input.currentActionMap.FindAction("Accel").ReadValue<float>() != 0)
+        {
+            walking = true;
+        }
+        else
+        {
+            walking = false;
+        }
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Goal")
+        if(collision.gameObject.tag == "Ground")
         {
-            ready = true;
-
-            collision.gameObject.GetComponent<GoalScript>().Goal(gameObject);
+            player.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
         }
     }
 }

@@ -17,18 +17,6 @@ public class ControllerTest : MonoBehaviour
         //sinput.defaultActionMap = gameObject.name;
     }
 
-    private void Update()
-    {
-        if(input.currentActionMap.FindAction("MoveHorizontal").ReadValue<Vector2>() != Vector2.zero)
-        {
-            Debug.Log(input.currentActionMap.FindAction("MoveHorizontal").ReadValue<Vector2>());
-        }
-
-        if(input.currentActionMap.FindAction("Lotation").ReadValue<float>() != 0)
-        {
-            Debug.Log(input.currentActionMap.FindAction("Lotation").ReadValue<float>());
-        }
-    }
 
     /*private void Update()
     {

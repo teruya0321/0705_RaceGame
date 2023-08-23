@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class CameraCon : MonoBehaviour
 {
-    List<GameObject> cameraList = new List<GameObject>();
+    public List<GameObject> cameraList = new List<GameObject>();
     // Start is called before the first frame update
     private void Awake()
     {
         foreach(Transform cameras in transform)
         {
-            cameraList.Add(cameras.gameObject);
+            cameraList.Add(cameras.gameObject); 
         }
     }
 

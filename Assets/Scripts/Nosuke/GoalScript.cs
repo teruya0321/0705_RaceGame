@@ -4,18 +4,54 @@ using UnityEngine;
 
 public class GoalScript : MonoBehaviour
 {
-    List<GameObject> goalPlayer = new List<GameObject>();
+    public List<GameObject> playerList = new List<GameObject>();
+    public List<float> goalDistance = new List<float>();
 
-    public void Goal(GameObject player)
-    {
-        goalPlayer.Add(player);
-    }
+    public MainGameController mainCon;
 
-    private void Update()
+    Dictionary<float, GameObject> playerName = new Dictionary<float, GameObject>();
+
+    bool goal = false;
+
+    private void Start()
     {
-        if(goalPlayer.Count == 4)
+        for(int i = 1; i <= 4; i++)
         {
-            // ここにゴールした時の処理を書く。まだ話し合ってないので書いてない。ぴーすぴーす
+            playerList.Add(InsectSelectController.instance.dic["Player" + i]);
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == ("Player") && !goal)
+        {
+            Goal();
+        }
+    }
+    public void Goal()
+    {
+        goal = true;
+
+        for(int i = 0; i <= 3; i++)
+        {
+            float f = (transform.position - playerList[i].transform.position).magnitude;
+
+            Debug.Log(playerList[i]);
+            Debug.Log(f);
+            goalDistance.Add(f);
+
+            playerName.Add(goalDistance[i], playerList[i]);
+
+            playerList[i].GetComponent<InsectMove>().goal = true;
+            playerList[i].transform.GetChild(1).GetChild(0).gameObject.GetComponent<Test_Nos>().goal = true;
+        }
+
+        goalDistance.Sort();
+
+        for (int i = 0; i <= 3; i++)
+        {
+            Debug.Log((i + 1) + "位;" + playerName[goalDistance[i]].name + " 距離:" + goalDistance[i]);
+
+            KeepValue.keepValue.playInsectObj.Add(i + 1, playerName[goalDistance[i]]);
         }
     }
 }

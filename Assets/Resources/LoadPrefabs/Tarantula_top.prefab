@@ -24,10 +24,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7420187810217208491}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.7570038, y: 0.019454718, z: 0.00062561035}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8850674377957661672}
   m_Father: {fileID: 0}
@@ -569,8 +569,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b30f5965ea843274ca596bc09c4e5694, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1827157689776616666}
   m_SourcePrefab: {fileID: 100100000, guid: b30f5965ea843274ca596bc09c4e5694, type: 3}
+--- !u!1 &8185355925480079698 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b30f5965ea843274ca596bc09c4e5694, type: 3}
+  m_PrefabInstance: {fileID: 9032338528568884227}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1827157689776616666
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8185355925480079698}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6a636d7eed08abf47b719d5e9d41076a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &8850674377957661672 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b30f5965ea843274ca596bc09c4e5694, type: 3}
