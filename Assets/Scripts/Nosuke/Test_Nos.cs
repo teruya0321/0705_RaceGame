@@ -30,8 +30,6 @@ public class Test_Nos : MonoBehaviour
     private void Start()
     {
         input = player.GetComponent<PlayerInput>();
-
-        
     }
     public void DRIVE()
     {
@@ -95,6 +93,11 @@ public class Test_Nos : MonoBehaviour
         if(collision.gameObject.tag == "Ground")
         {
             player.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+        }
+
+        if(collision.gameObject.tag == "UnderGround")
+        {
+            player.transform.position = transform.up * 100f;
         }
     }
 }

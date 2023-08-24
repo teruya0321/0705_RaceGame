@@ -834,6 +834,17 @@
                 },
                 {
                     "name": "",
+                    "id": "45968b69-84c1-4d19-93cd-e4f7ff9d5154",
+                    "path": "<HID::HORI CO.,LTD. HORIPAD 4 >/button3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "007fea87-4634-45c7-ae30-1143a5fa3bf5",
                     "path": "<SwitchProControllerHID>/buttonSouth",
                     "interactions": "",

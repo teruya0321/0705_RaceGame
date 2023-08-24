@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class GoalScript : MonoBehaviour
 {
@@ -11,7 +14,8 @@ public class GoalScript : MonoBehaviour
 
     Dictionary<float, GameObject> playerName = new Dictionary<float, GameObject>();
 
-    bool goal = false;
+    public bool goal = false;
+    
 
     private void Start()
     {
@@ -31,18 +35,21 @@ public class GoalScript : MonoBehaviour
     {
         goal = true;
 
+        mainCon.goalUI.SetActive(true);
+
         for(int i = 0; i <= 3; i++)
         {
-            float f = (transform.position - playerList[i].transform.position).magnitude;
+            float f = (transform.position - playerList[i].transform.position).magnitude * -1;
 
+            if (f < 0) f *= -1;
             Debug.Log(playerList[i]);
             Debug.Log(f);
             goalDistance.Add(f);
 
             playerName.Add(goalDistance[i], playerList[i]);
 
-            playerList[i].GetComponent<InsectMove>().goal = true;
-            playerList[i].transform.GetChild(1).GetChild(0).gameObject.GetComponent<Test_Nos>().goal = true;
+            playerList[i].GetComponent<InsectMove>().enabled = false;
+            playerList[i].transform.GetChild(1).GetChild(0).gameObject.GetComponent<Test_Nos>().enabled = false;
         }
 
         goalDistance.Sort();
@@ -52,6 +59,23 @@ public class GoalScript : MonoBehaviour
             Debug.Log((i + 1) + "ˆÊ;" + playerName[goalDistance[i]].name + " ‹——£:" + goalDistance[i]);
 
             KeepValue.keepValue.playInsectObj.Add(i + 1, playerName[goalDistance[i]]);
+
+            DontDestroyOnLoad(playerName[goalDistance[i]]);
+
+            playerName[goalDistance[i]].GetComponent<PlayerInput>().enabled = false;
+
+            playerName[goalDistance[i]].GetComponent<Rigidbody>().isKinematic = true;
         }
+
+        mainCon.mainAudioSource.PlayOneShot(mainCon.goalSE);
+        mainCon.mainAudioSource.loop = false;
+
+        Invoke("LoadRankingScene", 3);
+    }
+
+    void LoadRankingScene()
+    {
+        
+        SceneManager.LoadScene(5);
     }
 }

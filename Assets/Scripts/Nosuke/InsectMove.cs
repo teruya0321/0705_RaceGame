@@ -77,9 +77,10 @@ public class InsectMove : MonoBehaviour
 
     private void LateUpdate()
     {
-        cameraParent.transform.position = transform.position;
+        
 
         if (goal) return;
+        cameraParent.transform.position = transform.position;
 
         transform.localEulerAngles += new Vector3(0, player.currentActionMap.FindAction("MoveHorizontal").ReadValue<float>() * 10, 0);
 
@@ -103,6 +104,12 @@ public class InsectMove : MonoBehaviour
         if(collision.gameObject.tag == "Ground")
         {
             GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+        }
+
+        if(collision.gameObject.tag == "UnderGround")
+        {
+            transform.localEulerAngles = Vector3.zero;
+            transform.position = Vector3.up * 100f;
         }
     }
 

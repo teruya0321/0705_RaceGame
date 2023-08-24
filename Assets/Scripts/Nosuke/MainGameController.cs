@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 public class MainGameController : MonoBehaviour
 {
@@ -23,10 +24,20 @@ public class MainGameController : MonoBehaviour
 
     bool count  = false;
 
+    float goalTimer;
+
     List<float> playerRank = new List<float>();
-    Dictionary<float,GameObject> playerRange = new Dictionary<float,GameObject>();
+    Dictionary<float, Image> playerRange = new Dictionary<float, Image>();
+
     public Image[] playerRankImage;
     public Sprite[] rankUI;
+
+    public GameObject goalUI;
+
+    public AudioSource mainAudioSource;
+
+    public AudioClip mainBGM;
+    public AudioClip goalSE;
     private void Start()
     {
         foreach(Transform point in PointParent.transform)
@@ -35,6 +46,8 @@ public class MainGameController : MonoBehaviour
             pointsName.Add(point.name, point.gameObject);
             //Debug.Log(point.gameObject);
         }
+
+        mainAudioSource = GetComponent<AudioSource>();
 
         StartPointSet();
 
@@ -45,22 +58,41 @@ public class MainGameController : MonoBehaviour
     {
         if (!count) return;
 
+        goalTimer += Time.deltaTime;
+        if (goalTimer > 180 && !goalPoint.GetComponent<GoalScript>().goal)
+        {
+            goalPoint.gameObject.GetComponent<GoalScript>().Goal();
+            goalTimer = 0;
+        }
+
+        if(Input.GetKeyDown(KeyCode.Delete) && !goalPoint.GetComponent<GoalScript>().goal) goalPoint.GetComponent<GoalScript>().Goal();
+
         for(int i = 1; i <= 4; i++)
         {
-            float f = (goalPoint.position - players[i - 1].transform.position).magnitude;
-            Debug.Log(f);
+            float f = (players[i - 1].transform.position - goalPoint.position).magnitude;
+            //Debug.Log(f);
+            if (f < 0) f *= -1;
 
             playerRank.Add(f);
-
-            playerRange.Add(f, players[i - 1]);
+            playerRange.Add(f, playerRankImage[i - 1]);
         }
 
         playerRank.Sort();
+        playerRank.Reverse();
     }
 
     private void LateUpdate()
     {
-        
+        if(!count) return;
+        if (playerRank.Count <= 0) return; 
+
+        for (int i = 1; i <= 4; i++)
+        {
+            playerRange[playerRank[i - 1]].sprite = rankUI[i - 1];
+        }
+
+        playerRank.Clear();
+        playerRange.Clear();
     }
 
     void StartPointSet()
@@ -84,7 +116,7 @@ public class MainGameController : MonoBehaviour
     }
 
     IEnumerator GameStartCoroutine()
-    {
+    { 
         countdownObj.sprite = countdown[0];
 
         yield return new WaitForSeconds(1);
@@ -105,6 +137,8 @@ public class MainGameController : MonoBehaviour
         countdownObj.sprite = null;
         countdownObj.color = new Color(0.0f,0.0f, 0.0f, 0.0f);
 
+        mainAudioSource.PlayOneShot(mainBGM);
+        mainAudioSource.loop = true;
         count = true;
     }
     void GameStart()

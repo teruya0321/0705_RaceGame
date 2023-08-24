@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using System.IO;
 using System.Threading;
+using UnityEngine.UI;
 
 public class SelectInsect : MonoBehaviour
 {
@@ -38,11 +39,27 @@ public class SelectInsect : MonoBehaviour
 
     public bool cooltime;
 
+    TextAsset insectNameCSV;
+    List<string[]> insectNameList = new List<string[]>();
+
+    public Text insectName;
+
+    public string[] bodyName;
+
+    public GameObject selectEff;
     void Awake()
     {
         input = GetComponent<PlayerInput>();
         selectCon = GameObject.FindWithTag("GameController").GetComponent<InsectSelectController>();
         // InsectSelectcontrollerをタグで検索して変数にぶち込む
+
+        insectNameCSV = Resources.Load("CSVs/InsectName") as TextAsset;
+        StringReader reader = new StringReader(insectNameCSV.text);
+        while (reader.Peek() != -1)
+        {
+            string line = reader.ReadLine(); // 一行ずつ読み込み
+            insectNameList.Add(line.Split(',')); // , 区切りでリストに追加
+        }
 
         audioSource = GetComponent<AudioSource>();
     }
@@ -53,14 +70,20 @@ public class SelectInsect : MonoBehaviour
 
         for (int i = 1; i <= 3; i++)
         {
-            bodyList[i - 1] = Instantiate((GameObject)Resources.Load("LoadPrefabs/" + selectCon.insectSelectCSVDatas[insectNumber][i]), conectPoint[i - 1]);
-            if(i == 2)
+
+            bodyList[i - 1] = Instantiate((GameObject)Resources.Load("LoadPrefabs/" + selectCon.insectSelectCSVDatas[insectNumber][i]),
+                                   conectPoint[i - 1]);
+            bodyName[i - 1] = insectNameList[1][i];
+
+            if (i == 2)
             {
                 middleConect = bodyList[i - 1].AddComponent<ReloadMiddleConectPoint>();
                 middleConect.ReloadMiddle(conectPoint[0].gameObject, conectPoint[2].gameObject);
             }
             // 最初のオブジェクトを設定に入れる
-        } 
+        }
+
+        insectName.text = bodyName[0] + bodyName[1] + bodyName[2];
     }
     void Update()
     {
@@ -120,6 +143,12 @@ public class SelectInsect : MonoBehaviour
                                    conectPoint[bodyNumber - 1]);
         // CSVから対応したオブジェクトを生成する
 
+        bodyName[bodyNumber - 1] = insectNameList[insectNumber][bodyNumber];
+
+        insectName.text = bodyName[0] + bodyName[1] + bodyName[2];
+
+        
+
         if(bodyNumber == 2)
         {
             middleConect = bodyList[bodyNumber - 1].AddComponent<ReloadMiddleConectPoint>();
@@ -144,6 +173,8 @@ public class SelectInsect : MonoBehaviour
         // 効果音を鳴らす
 
         cooltime = true;
+
+        Instantiate(selectEff, bodyList[bodyNumber - 1].transform);
     }
 
     // PCでデバッグ用の関数 あんま使わない方がいいかも
@@ -156,5 +187,7 @@ public class SelectInsect : MonoBehaviour
         insectNumber = 1;
         slotTimer = 0;
         audioSource.PlayOneShot(selectSE);
+
+        Instantiate(selectEff, bodyList[bodyNumber - 1].transform);
     }
 }

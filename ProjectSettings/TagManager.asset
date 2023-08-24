@@ -13,6 +13,7 @@ TagManager:
   - Goal
   - Wheel
   - Reset
+  - UnderGround
   layers:
   - Default
   - TransparentFX
@@ -28,7 +29,7 @@ TagManager:
   - Reset
   - Balancer
   - 
-  - 
+  - Wall
   - 
   - 
   - 

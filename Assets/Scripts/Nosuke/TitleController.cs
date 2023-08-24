@@ -6,10 +6,16 @@ using UnityEngine.SceneManagement;
 
 public class TitleController : MonoBehaviour
 {
-    public void ActionButton(InputAction.CallbackContext context)
+    public void ActionButton()
     {
-        if (!context.performed) return;
-
         SceneManager.LoadScene(1);
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 }

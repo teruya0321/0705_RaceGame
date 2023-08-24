@@ -123,6 +123,82 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &248032440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 248032441}
+  - component: {fileID: 248032443}
+  - component: {fileID: 248032442}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &248032441
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248032440}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 891873799}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -558, y: 129}
+  m_SizeDelta: {x: 944, y: 144}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &248032442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248032440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: c678850797175cf499ffb72b8e6c452e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &248032443
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248032440}
+  m_CullTransparentMesh: 1
 --- !u!1 &447411431
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,7 +360,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1883969814}
+  - {fileID: 248032441}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -396,6 +474,7 @@ GameObject:
   - component: {fileID: 1099165556}
   - component: {fileID: 1099165555}
   - component: {fileID: 1099165554}
+  - component: {fileID: 1099165557}
   m_Layer: 0
   m_Name: TitleController
   m_TagString: Untagged
@@ -442,16 +521,6 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls: []
-    m_ActionId: 82c48c0e-9457-4afe-b55e-1eb9a27760f3
-    m_ActionName: Player1/MoveHorizontal[/QIXIONG Wire PS4 Controller/stick/right,/QIXIONG
-      Wire PS4 Controller/stick/left]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 74caa468-151b-45a3-bae6-85c11065f9f0
-    m_ActionName: Player1/MoveVertical[/QIXIONG Wire PS4 Controller/stick/down,/QIXIONG
-      Wire PS4 Controller/stick/up]
-  - m_PersistentCalls:
-      m_Calls: []
     m_ActionId: 29b6abc0-cfef-4836-bcd4-a36c7a8cff18
     m_ActionName: Player1/Brake[/QIXIONG Wire PS4 Controller/button7]
   - m_PersistentCalls:
@@ -470,10 +539,6 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 8b619d9b-5bc6-4ed9-9b95-3d43f6ede802
     m_ActionName: Player2/MoveHorizontal
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 73cd9bdf-367c-4640-b264-e75203f5082a
-    m_ActionName: Player2/MoveVertical
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 5a79480f-5e66-46a5-bbd3-ac1eb177974c
@@ -558,6 +623,66 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 0700a01a-ea8d-46f1-b3f9-79f9790a1d7d
     m_ActionName: AllController/Back[/QIXIONG Wire PS4 Controller/button3]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: bf9c172f-b408-43ef-beb5-2c733497fef7
+    m_ActionName: Player1/MoveHorizontal
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 273fd532-6a10-410e-8d68-0a2f85872a4a
+    m_ActionName: Player1/Lotation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4c54506d-c8fc-451d-8fe2-b3f23fa479df
+    m_ActionName: Player1/CameraReset
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 586b5493-01e5-400e-94c7-213e6b13fde5
+    m_ActionName: Player1/LotationReset
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 843a792d-7cd9-472a-80d0-24d27bb0ae20
+    m_ActionName: Player1/Back
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 74cf3348-f0cb-47a7-b6e4-649a4df162b4
+    m_ActionName: Player2/Lotation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a64082b8-8096-4f74-834e-9c3e3d8a1e2c
+    m_ActionName: Player2/CameraReset
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: bb86796c-b1c8-477b-9ac8-f9eaa9005ab3
+    m_ActionName: Player2/LotationReset
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 00e41526-9e55-41c0-845e-95de8fdaf138
+    m_ActionName: Player2/Back
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c59d4f1a-c509-4c99-b563-fa3cd486d866
+    m_ActionName: Player3/CameraReset[/DualShock4GamepadHID/rightStickPress]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: cf1e11ca-2fe9-4d0b-8a7b-7510253dc784
+    m_ActionName: Player3/LotationReset[/DualShock4GamepadHID/dpad/up]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 518a32b0-1835-479a-b71c-52820d2716ae
+    m_ActionName: Player3/Back[/DualShock4GamepadHID/rightShoulder]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5cc558ab-25bb-484d-a2e3-7a4bb0ade73c
+    m_ActionName: Player4/CameraReset
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 630a61b8-1646-401e-a361-4ec03c8e9ae2
+    m_ActionName: Player4/LotationReset
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4a638adf-4d2b-4274-bb75-85372beb04a5
+    m_ActionName: Player4/Back
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: AllController
@@ -578,6 +703,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1099165557
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099165553}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 3bcf6ebbe065b1e4b80cd94d0813a83b, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1589290037
 GameObject:
   m_ObjectHideFlags: 0
@@ -672,3 +893,79 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1883969813
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1883969814}
+  - component: {fileID: 1883969816}
+  - component: {fileID: 1883969815}
+  m_Layer: 5
+  m_Name: TitleBG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1883969814
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883969813}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 891873799}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1883969815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883969813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 53a54efee43c2f548bc62a70e166dffa, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1883969816
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883969813}
+  m_CullTransparentMesh: 1
